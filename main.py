@@ -1,6 +1,6 @@
 import streamlit as st
-
-st.title("Echo Bot")
+import initializeLLM as LLM
+st.title("MSU Teaching ASSistant")
 
 # Initialize chat history
 if "messages" not in st.session_state:
@@ -18,7 +18,8 @@ if prompt := st.chat_input("What is up?"):
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    response = f"Echo: {prompt}"
+    # generate LLM response
+    response = LLM.get_response(prompt)
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
         st.markdown(response)
