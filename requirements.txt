@@ -1,2 +1,5 @@
 streamlit==1.31.0
 openai==0.28.1
+embeddings-util==1.0.1
+pinecone-client==2.2.1
+scikit-learn==1.4.0
