@@ -198,7 +198,7 @@ def closest_embeddings_to_centroid(embeddings, centroid, n=3):
     closest_indices = np.argpartition(distances, range(n))[:n]
     return closest_indices.tolist()
 
-def search_embeddings(query, embeddings, n=3):
+def search_embeddings(query, embeddings=read_embeddings_from_csv('../Output/default_embeddings.csv'), n=3):
     """
     Search for the most similar embeddings to the given query using cosine similarity.
 
@@ -409,4 +409,4 @@ for filename in os.listdir('../exampleData'):
     filepath.append(os.path.join('../exampleData', filename))
 
 #process_pdfs_and_create_csv(filepath, '../Output/default_embeddings.csv','../Output/default_chunks.csv', chunk_size=300)
-search_embeddings("testing",read_embeddings_from_csv('../Output/default_embeddings.csv'))
+#search_embeddings("testing",read_embeddings_from_csv('../Output/default_embeddings.csv'))
