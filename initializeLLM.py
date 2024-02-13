@@ -72,6 +72,15 @@ def get_response_wFunction(userInput):
                 "name": function_name,
                 "content": function_response,
             })  
-        return function_response
-    
+
+        # get a new response from the model where it can see the function response
+            second_response = openai.ChatCompletion.create(
+                model=model_engine,
+                messages=GPT_messages,
+                temperature=0.5,
+                tools=GPT_tools,
+                tool_choice="auto", 
+            ) 
+        return second_response
+        
     return GPT_response
