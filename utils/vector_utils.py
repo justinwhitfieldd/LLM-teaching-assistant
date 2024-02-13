@@ -160,8 +160,17 @@ def read_embeddings_from_csv(csv_path):
     with open(csv_path, "r", newline="") as csvfile:
         csv_reader = csv.reader(csvfile)
         for row in csv_reader:
-            embedding = [float(value) for value in row]
-            embeddings.append(embedding)
+            # Assuming each row is a string representation of a tuple ('embedding', [list_of_floats])
+            # We need to safely evaluate the string representation of the list of floats
+            try:
+                # Extract the list of floats from the tuple
+                embedding_str = row[0]  # This gets the entire tuple as a string
+                # Use ast.literal_eval to safely evaluate the string into a Python object
+                _, embedding_list = ast.literal_eval(embedding_str)
+                # Now embedding_list is the actual list of floats
+                embeddings.append(embedding_list)
+            except Exception as e:
+                print(f"Error processing row {row}: {e}")
     return embeddings
 
 def write_chunks_to_csv(chunks, csv_path):
@@ -230,7 +239,7 @@ def summarize_text(embeddings, text_chunks, n=3):
     summary = retrieve_answer(closest_indices, text_chunks, n)
     return summary
 
-def process_pdfs_and_create_csv(pdf_paths, csv_path, chunk_size=1000):
+def process_pdfs_and_create_csv(pdf_paths, chunks_csv_path, csv_path, chunk_size=1000):
     all_chunks = []
     all_embeddings = []
     for pdf_path in pdf_paths:
@@ -241,7 +250,9 @@ def process_pdfs_and_create_csv(pdf_paths, csv_path, chunk_size=1000):
         print(embeddings)
         all_chunks.extend(chunks)
         all_embeddings.extend(embeddings)
-    write_embeddings_to_csv(all_embeddings, csv_path)
+    write_embeddings_to_csv(all_embeddings,csv_path)
+    write_chunks_to_csv(all_chunks, chunks_csv_path)
+
     return csv_path, all_chunks
 
 def process_docs_and_create_csv(dir_path, embeddings_csv_path, chunks_csv_path, chunk_size=1000):
@@ -393,9 +404,9 @@ def doc_agent(prompt):
         #return answer
         return [{"role":"user", "content": query_with_context}, {"role":"assistant", "content": answer}]
 
-# filepath = []
-# for filename in os.listdir('../exampleData'):
-#     filepath.append(os.path.join('../exampleData', filename))
+filepath = []
+for filename in os.listdir('../exampleData'):
+    filepath.append(os.path.join('../exampleData', filename))
 
-# process_pdfs_and_create_csv(filepath, '../Output/default_embeddings.csv', chunk_size=300)
+#process_pdfs_and_create_csv(filepath, '../Output/default_embeddings.csv','../Output/default_chunks.csv', chunk_size=300)
 search_embeddings("testing",read_embeddings_from_csv('../Output/default_embeddings.csv'))
