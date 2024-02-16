@@ -1,5 +1,5 @@
 from openai import OpenAI
-
+from unicodedata import normalize
 import csv
 import PyPDF2
 import numpy as np
@@ -21,9 +21,9 @@ import os
 import whisper
 import ast
 import time
-from text_to_speech import text_to_speech
+#from text_to_speech import text_to_speech
 from dotenv import load_dotenv
-
+import re
 load_dotenv()
 client = OpenAI(api_key=os.getenv('OPEN_AI_API_KEY'))
 
@@ -176,7 +176,6 @@ def read_embeddings_from_csv(csv_path):
 def write_chunks_to_csv(chunks, csv_path):
     with open(csv_path, "w", encoding="utf-8", newline="") as csv_file:
         writer = csv.writer(csv_file)
-        writer.writerow(["chunk"])
         for chunk in chunks:
             writer.writerow([chunk])
 
@@ -197,8 +196,7 @@ def closest_embeddings_to_centroid(embeddings, centroid, n=3):
     distances = [distance_matrix([embedding], [centroid])[0][0] for embedding in embeddings]
     closest_indices = np.argpartition(distances, range(n))[:n]
     return closest_indices.tolist()
-
-def search_embeddings(query, embeddings=read_embeddings_from_csv('../Output/default_embeddings.csv'), n=3):
+def search_embeddings(query, embeddings=read_embeddings_from_csv('Output/default_embeddings.csv'), n=1):
     """
     Search for the most similar embeddings to the given query using cosine similarity.
 
@@ -214,8 +212,9 @@ def search_embeddings(query, embeddings=read_embeddings_from_csv('../Output/defa
     similarities = [cosine(embedding, query_embedding) for embedding in embeddings]
     # Get the indices of the top N most similar embeddings
     top_indices = np.argsort(similarities)[-n:][::-1]
-    return top_indices.tolist()
-
+    top_indices.tolist()
+    top_indices=', '.join(map(str, top_indices))
+    return re.sub(r'[^\x00-\x7F]', '', top_indices)
 def retrieve_answer(indices, text_chunks, n=3):
     """
     Retrieve the most relevant text from the text chunks using the provided indices.
@@ -244,10 +243,11 @@ def process_pdfs_and_create_csv(pdf_paths, chunks_csv_path, csv_path, chunk_size
     all_embeddings = []
     for pdf_path in pdf_paths:
         text = read_pdf_file(pdf_path)
+        text = re.sub(r'[^\x00-\x7F]', '', text)
         chunks = split_text(text, chunk_size)
-        print(chunks)
+        #print(chunks)
         embeddings = create_embeddings(chunks)
-        print(embeddings)
+        #print(embeddings)
         all_chunks.extend(chunks)
         all_embeddings.extend(embeddings)
     write_embeddings_to_csv(all_embeddings,csv_path)
@@ -364,49 +364,50 @@ def query_agent_stream(prompt, delay_time=0.01, speech=False):
         return reply_content
     return reply_content
 
-def doc_agent(prompt):
-    prompt = prompt + " " + str(folder_paths("./docs"))
-    completion = client.chat.completions.create(model = "gpt-4",
-            temperature = 0,
-            messages=[
-                    {"role":"system", "content": "You take a user request about documents in a folder. \
-                     The request will refer to a folder name and contain a list of paths to folders provided\
-                      by another function. The user request will ask for a summary or contain specfic query.\
-                      You will respond only with a two item list. The first item in the list must be \
-                     'summarize' if the user requests a summary, or otherwise the query the user is making \
-                     about the documents. The second item in the list is the path to folder they are refering to."},
-                    {"role":"user", "content": prompt},
-                    ])
-    reply_content = completion.choices[0].message.content
-    reply_list = ast.literal_eval(reply_content)
-    query = reply_list[0]
-    folder = reply_list[1]
-    embeds_csv_path = os.path.join(folder, "embeds.csv")
-    chunks_csv_path = os.path.join(folder, "chunks.csv")
-    #check if embeddings have been made already, if not make them 
-    if check_embeds(folder) == False:
-        process_docs_and_create_csv(folder, embeds_csv_path, chunks_csv_path)
-        embeddings = read_embeddings_from_csv(embeds_csv_path)
-        chunks = read_chunks_from_csv(chunks_csv_path)
-    else:
-        embeddings = read_embeddings_from_csv(embeds_csv_path)
-        chunks = read_chunks_from_csv(chunks_csv_path)
-    if query == "summarize":
-        summary_chunk = " " + str(summarize_text(embeddings, chunks))
-        summary = summary_agent(summary_chunk)
-        #return summary
-        return [{"role":"user", "content": prompt + " " + summary_chunk}, {"role":"assistant", "content":  summary}]
-    else:
-        index = search_embeddings(query, embeddings)
-        answer_chunk = " " + str(retrieve_answer(index, chunks))
-        query_with_context = str(query) + answer_chunk
-        answer = query_agent(query_with_context)
-        #return answer
-        return [{"role":"user", "content": query_with_context}, {"role":"assistant", "content": answer}]
+# def doc_agent(prompt):
+#     prompt = prompt + " " + str(folder_paths("./docs"))
+#     completion = client.chat.completions.create(
+#             model = "gpt-4",
+#             temperature = 0,
+#             messages=[
+#                     {"role":"system", "content": "You take a user request about documents in a folder. \
+#                      The request will refer to a folder name and contain a list of paths to folders provided\
+#                       by another function. The user request will ask for a summary or contain specfic query.\
+#                       You will respond only with a two item list. The first item in the list must be \
+#                      'summarize' if the user requests a summary, or otherwise the query the user is making \
+#                      about the documents. The second item in the list is the path to folder they are refering to."},
+#                     {"role":"user", "content": prompt},
+#                     ])
+#     reply_content = completion.choices[0].message.content
+#     reply_list = ast.literal_eval(reply_content)
+#     query = reply_list[0]
+#     folder = reply_list[1]
+#     embeds_csv_path = os.path.join(folder, "embeds.csv")
+#     chunks_csv_path = os.path.join(folder, "chunks.csv")
+#     #check if embeddings have been made already, if not make them 
+#     if check_embeds(folder) == False:
+#         process_docs_and_create_csv(folder, embeds_csv_path, chunks_csv_path)
+#         embeddings = read_embeddings_from_csv(embeds_csv_path)
+#         chunks = read_chunks_from_csv(chunks_csv_path)
+#     else:
+#         embeddings = read_embeddings_from_csv(embeds_csv_path)
+#         chunks = read_chunks_from_csv(chunks_csv_path)
+#     if query == "summarize":
+#         summary_chunk = " " + str(summarize_text(embeddings, chunks))
+#         summary = summary_agent(summary_chunk)
+#         #return summary
+#         return [{"role":"user", "content": prompt + " " + summary_chunk}, {"role":"assistant", "content":  summary}]
+#     else:
+#         index = search_embeddings(query, embeddings)
+#         answer_chunk = " " + str(retrieve_answer(index, chunks))
+#         query_with_context = str(query) + answer_chunk
+#         answer = query_agent(query_with_context)
+#         #return answer
+#         return [{"role":"user", "content": query_with_context}, {"role":"assistant", "content": answer}]
 
-filepath = []
-for filename in os.listdir('../exampleData'):
-    filepath.append(os.path.join('../exampleData', filename))
+# filepath = []
+# for filename in os.listdir('../exampleData'):
+#     filepath.append(os.path.join('../exampleData', filename))
 
-#process_pdfs_and_create_csv(filepath, '../Output/default_embeddings.csv','../Output/default_chunks.csv', chunk_size=300)
+# process_pdfs_and_create_csv(filepath, '../Output/default_embeddings.csv','../Output/default_chunks.csv', chunk_size=300)
 #search_embeddings("testing",read_embeddings_from_csv('../Output/default_embeddings.csv'))

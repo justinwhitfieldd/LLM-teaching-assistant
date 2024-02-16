@@ -19,7 +19,7 @@ if prompt := st.chat_input("What is up?"):
     st.session_state.messages.append({"role": "user", "content": prompt})
 
     # generate LLM response
-    response = LLM.get_response(prompt)
+    response = LLM.get_response_wFunction(prompt)
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
         st.markdown(response)
