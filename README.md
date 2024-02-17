@@ -9,7 +9,7 @@ touch .env
 ```
 Add in OpenAI key as such into the .env
 ```
-OPEN_AI_API_KEY = "your-key-here
+OPEN_AI_API_KEY = "your-key-here"
 ```
 Run Streamlit
 ```
