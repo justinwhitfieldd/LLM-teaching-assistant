@@ -153,24 +153,15 @@ def write_embeddings_to_csv(embeddings, csv_path):
     with open(csv_path, "w", newline="") as csvfile:
         csv_writer = csv.writer(csvfile)
         for embedding in embeddings:
-            csv_writer.writerow(embedding)
+            csv_writer.writerow(embedding.embedding)
 
 def read_embeddings_from_csv(csv_path):
     embeddings = []
     with open(csv_path, "r", newline="") as csvfile:
         csv_reader = csv.reader(csvfile)
         for row in csv_reader:
-            # Assuming each row is a string representation of a tuple ('embedding', [list_of_floats])
-            # We need to safely evaluate the string representation of the list of floats
-            try:
-                # Extract the list of floats from the tuple
-                embedding_str = row[0]  # This gets the entire tuple as a string
-                # Use ast.literal_eval to safely evaluate the string into a Python object
-                _, embedding_list = ast.literal_eval(embedding_str)
-                # Now embedding_list is the actual list of floats
-                embeddings.append(embedding_list)
-            except Exception as e:
-                print(f"Error processing row {row}: {e}")
+            embedding = [float(value) for value in row]
+            embeddings.append(embedding)
     return embeddings
 
 def write_chunks_to_csv(chunks, csv_path):
@@ -196,7 +187,7 @@ def closest_embeddings_to_centroid(embeddings, centroid, n=3):
     distances = [distance_matrix([embedding], [centroid])[0][0] for embedding in embeddings]
     closest_indices = np.argpartition(distances, range(n))[:n]
     return closest_indices.tolist()
-def search_embeddings(query, embeddings=read_embeddings_from_csv('Output/default_embeddings.csv'), n=1):
+def search_embeddings(query, embeddings=read_embeddings_from_csv('Output/default_embeddings.csv'), n=3):
     """
     Search for the most similar embeddings to the given query using cosine similarity.
 
@@ -208,13 +199,12 @@ def search_embeddings(query, embeddings=read_embeddings_from_csv('Output/default
     Returns:
         list: A list of indices of the top N most similar embeddings.
     """
+    print("inside search embeddings")
     query_embedding = create_embeddings([query])[0]
-    similarities = [cosine(embedding, query_embedding) for embedding in embeddings]
-    # Get the indices of the top N most similar embeddings
+    similarities = [cosine(embedding, query_embedding.embedding) for embedding in embeddings]
     top_indices = np.argsort(similarities)[-n:][::-1]
-    top_indices.tolist()
-    top_indices=', '.join(map(str, top_indices))
-    return re.sub(r'[^\x00-\x7F]', '', top_indices)
+
+    return top_indices.tolist()
 def retrieve_answer(indices, text_chunks, n=3):
     """
     Retrieve the most relevant text from the text chunks using the provided indices.
@@ -238,7 +228,7 @@ def summarize_text(embeddings, text_chunks, n=3):
     summary = retrieve_answer(closest_indices, text_chunks, n)
     return summary
 
-def process_pdfs_and_create_csv(pdf_paths, chunks_csv_path, csv_path, chunk_size=1000):
+def process_pdfs_and_create_csv(pdf_paths, csv_path,chunks_csv_path, chunk_size=200):
     all_chunks = []
     all_embeddings = []
     for pdf_path in pdf_paths:
@@ -410,4 +400,4 @@ def query_agent_stream(prompt, delay_time=0.01, speech=False):
 #     filepath.append(os.path.join('../exampleData', filename))
 
 # process_pdfs_and_create_csv(filepath, '../Output/default_embeddings.csv','../Output/default_chunks.csv', chunk_size=300)
-#search_embeddings("testing",read_embeddings_from_csv('../Output/default_embeddings.csv'))
+# print(retrieve_answer(search_embeddings("Creativity in RE and Its Measurement"),read_chunks_from_csv("../Output/default_chunks.csv"),3))

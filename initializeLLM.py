@@ -37,8 +37,7 @@ GPT_tools = [
             "parameters": {
                     "type": "object",
                     "properties": {
-                        "query": {
-                            "type": "string","description": "this is your question that similar text containing valuble information will be found for.",},
+                        "query": {"type": "string","description": "this is your question that similar text containing valuble information will be found for.",},
                         },
                     },
         },
