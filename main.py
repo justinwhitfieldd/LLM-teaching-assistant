@@ -1,6 +1,30 @@
 import streamlit as st
 import initializeLLM as LLM
-st.title("MSU Teaching ASSistant")
+
+st.image("Resources/banner.png", caption=None, width=None, use_column_width="auto", clamp=False, channels="RGB", output_format="auto")
+
+col1, col2 = st.columns([1,8])
+with col1:
+    st.image("Resources/logo.png", caption=None, width=None, use_column_width="auto", clamp=False, channels="RGB", output_format="auto")
+with col2:
+    st.header("Bully - Teaching Assistant")
+
+col1, col2, col3 = st.columns([1,9,2])
+with col1:
+    st.image("Resources/logo.png", caption=None, width=None, use_column_width="auto", clamp=False, channels="RGB", output_format="auto")
+with col2:
+    code = '''Hello bulldawgs! I am a virtual teaching assistant for
+Introduction to Computer Programming. In order for me to
+best serve you, please choose one of the following prompt.'''
+    st.code(code, language=None)
+
+st.write("")
+st.write("")
+
+col1, col2 = st.columns([2,1])
+with col1:
+    userSelectedPrompt = st.selectbox(
+        "What can I help you today with?", key="prompt", options=["Explain Concept", "Code Review", "Take a Quiz"], index=0)
 
 # Initialize chat history
 if "messages" not in st.session_state:
