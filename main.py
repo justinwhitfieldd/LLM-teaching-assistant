@@ -1,14 +1,17 @@
 import streamlit as st
 import initializeLLM as LLM
 
+# Added the PATENT Lab banner on the top
 st.image("Resources/banner.png", caption=None, width=None, use_column_width="auto", clamp=False, channels="RGB", output_format="auto")
 
-col1, col2 = st.columns([1,8])
-with col1:
-    st.image("Resources/logo.png", caption=None, width=None, use_column_width="auto", clamp=False, channels="RGB", output_format="auto")
+# Here we added the title of the app with the logo
+col1, col2, col3 = st.columns([2,1,6])
 with col2:
+    st.image("Resources/logo.png", caption=None, width=None, use_column_width="auto", clamp=False, channels="RGB", output_format="auto")
+with col3:
     st.header("Bully - Teaching Assistant")
 
+# Introduced the bot application
 col1, col2, col3 = st.columns([1,9,2])
 with col1:
     st.image("Resources/logo.png", caption=None, width=None, use_column_width="auto", clamp=False, channels="RGB", output_format="auto")
@@ -21,10 +24,20 @@ best serve you, please choose one of the following prompt.'''
 st.write("")
 st.write("")
 
+# Added the prompt for the user to select and ask further questions about
 col1, col2 = st.columns([2,1])
 with col1:
     userSelectedPrompt = st.selectbox(
-        "What can I help you today with?", key="prompt", options=["Explain Concept", "Code Review", "Take a Quiz"], index=0)
+        "What can I help you today with?", key="option", options=["Explain Concept", "Code Review", "Take a Quiz"], index=0)
+
+# This markdown is for the user and assistant to reverse the direction of the text-alignment
+st.markdown(
+    """ <style>
+            .st-emotion-cache-janbn0 {
+            flex-direction: row-reverse;
+            text-align: right;}
+        </style>""", unsafe_allow_html=True)
+
 
 # Initialize chat history
 if "messages" not in st.session_state:
