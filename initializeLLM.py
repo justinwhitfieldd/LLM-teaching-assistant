@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
-from utils.vector_utils import search_embeddings
+from utils.vector_utils import query_vector_with_summary
 import json
 load_dotenv()
 model_engine = "gpt-3.5-turbo-1106"
@@ -57,7 +57,7 @@ def get_response_wFunction(userInput):
     tool_calls = GPT_response.tool_calls
     if tool_calls:
         available_functions = {
-            "vector_search": search_embeddings,
+            "vector_search": query_vector_with_summary,
         }
         GPT_messages.append(GPT_response) 
         for tool_call in tool_calls:
@@ -83,6 +83,6 @@ def get_response_wFunction(userInput):
             tool_choice="auto", 
         )
         print("\n\n\n gpt messages",GPT_messages,"\n\n gpt messages")
-        return second_response
+        return second_response.choices[0].message.content
         
     return GPT_response

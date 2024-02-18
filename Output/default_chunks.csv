@@ -5,183 +5,174 @@ Dr. Tanmay Bhowmik
 tbhowmik@cse.msstate.edu
 Special thanks to Dr. Nan Niu & Dr. Byron WilliamsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 2Agenda
-This Class:"
-"
+This Class:
 Course Orientation
 SE Recap
 Next Class:
 Introduction to Testing
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 3About the Instructor
- Tanmay Bhowmik 
- Assistant Prof. Dept. of CSE, MSU, 2016  present
- Assistant Prof. of CS, Northwest Missouri State University, 2015  16
- Ph"
-"D and MS in Computer Science, MSU, 2008  15
- BS in CSE, NIT Durgapur, West Bengal, India, 2003  07
- Professional software development at nSPARC, MSU, 2012  14 
- From Bangladesh
- Research interest
- Software Engineering
- Requirements engineering, secure software engineering, software maintenance
- How "
-"to reach
- Office hours: T & R 9:30am  10:30am 
- Other times by appointment
- Hobby
- Travelling, watching documentary, reading, cookingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+• Tanmay Bhowmik 
+– Assistant Prof. Dept. of CSE, MS"
+"U, 2016 – present
+– Assistant Prof. of CS, Northwest Missouri State University, 2015 – 16
+– PhD and MS in Computer Science, MSU, 2008 – 15
+– BS in CSE, NIT Durgapur, West Bengal, India, 2003 – 07
+– Professional software development at nSPARC, MSU, 2012 – 14 
+– From Bangladesh
+• Research interest
+– Software Engineering
+• Requirements engineering, secure software engineering, software maintenance
+• How to reach
+– Office hours: T & R 9:30am – 10:30am 
+– Other times by appointment
+• Hobby
+– Travelling, watching"
+" documentary, reading, cookingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 4Teaching Style?
- Interactive
- Lecturing alone doesnt work well
- Need feedback  both positive "
-"and negative
- Need your participation, and YES, that helps in a 
+• Interactive
+– Lecturing alone doesn’t work well
+– Need feedback – both positive and negative
+– Need your participation, and YES, that helps in a 
 BIG way!MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-5 Get to know the discipline of software quality
- Prerequisite
- CSE 4214/6214 (Intro to Software Engineering)
- CSE2383 (data structures & analysis of algo"
-"rithms)
- Talk to the instructor if your case is special
- Regularly check course website for updates
- Class
- Twice a week: T & R 2:00pm-3:15pm, HILBUN 350
- Textbook
- Jeff Tian, Software Quality Engineering, 2005
- Paul C. Jorgensen, Software Testing: A Craftsmans 
-Approach, 4th editionAbout This Cours"
-"eMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-6 Learn the basics of software quality
- Learn various testing techniques
- Learn other QA techniques than testing
- Get ready for a software testing or QA position
- Get ready to do SE research
- For graduate and honors students
- "
-"Learn to become a (software) professional
- Improve the skills
- Communication, time management, using testing tools, etc.Course GoalsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-7 Overview and Basics
- Software, Quality, QA, Quality Engineering, etc.
- Software Testing
- Test"
-" Activities, Coverage and Usage Testing, Boundary 
+5• Get to know the discipline of software quality
+• Prerequisite
+– CSE 4214/6214 (Intro to Software Engineering)
+• CSE2383 (data structures & analysis of algorithm"
+"s)
+– Talk to the instructor if your case is special
+• Regularly check course website for updates
+• Class
+– Twice a week: T & R 2:00pm-3:15pm, HILBUN 350
+• Textbook
+– Jeff Tian, Software Quality Engineering, 2005
+– Paul C. Jorgensen, Software Testing: A Craftsman’s 
+Approach, 4th editionAbout This CourseMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+6• Learn the basics of software quality
+• Learn various testing techniques
+• Learn other QA techniques than testing
+• Get ready for a s"
+"oftware testing or QA position
+• Get ready to do SE research
+– For graduate and honors students
+• Learn to become a (software) professional
+• Improve the skills
+– Communication, time management, using testing tools, etc.Course GoalsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+7• Overview and Basics
+– Software, Quality, QA, Quality Engineering, etc.
+• Software Testing
+– Test Activities, Coverage and Usage Testing, Boundary 
 Testing, Finite State Machine, Control Flow, etc.
- QA beyond Testing
- Defect Prevention, Software Inspection, Formal 
+• QA be"
+"yond Testing
+– Defect Prevention, Software Inspection, Formal 
 Verification, Fault Tolerance, etc.
- Quantifiable Quality Improvement
- Feedback, Measurements, Risk Management, Reliability, 
-etc.T"
-"opics (subject to change WITH notice )MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-8How to succeed
- Do your homework (also, class reviews & readings)
- Take the exams, quizzes, and assignments very seriously
- Participate in the class
- Attendance is mandatory
- Take part in "
-"discussion
- Be fair and supportive to your colleaguesGrading
+• Quantifiable Quality Improvement
+– Feedback, Measurements, Risk Management, Reliability, 
+etc.Topics (subject to change WITH notice )MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+8•How to succeed
+– Do your homework (also, class reviews & readings)
+– Take the exams, quizzes, and assignments very seriously
+– Participate in the class
+• Attendance is mandatory
+• Take part in discussion"
+"
+– Be fair and supportive to your colleaguesGrading
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-9How to succeed
- Do your homework (also, class reviews & readings)
- Take the exams, quizzes, and assignments very seriously
- Participate in the class
- Attendance is m"
-"andatory
- Take part in discussion
- Be fair and supportive to your colleaguesGrading
+9•How to succeed
+– Do your homework (also, class reviews & readings)
+– Take the exams, quizzes, and assignments very seriously
+– Participate in the class
+• Attendance is mandatory
+• Take part in discussion
+– Be fair and supportive to your colleaguesGrading
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 10Graduate and Honors Credit
- Graduate Students
- Need to write a term paper
- Will comprise 25% of the final grade 
- Honors Students
- Will compr"
-"ise 15% of the final grade 
- Tentative deadlines are given in the course calendarMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+• Graduate Students
+– Need t"
+"o write a term paper
+– Will comprise 25% of the final grade 
+• Honors Students
+– Will comprise 15% of the final grade 
+• Tentative deadlines are given in the course calendarMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 11Course Policies
- Assignment Deadlines
- Attendance, Unexcused absence
- Late submission and re-grading
- Communication policy
- Emails and course an"
-"nouncements
- Classroom policy
- Mute laptops & cell phones, but be out loud when 
+• Assignment Deadlines
+• Attendance, Unexcused absence
+• Late submission and re-grading
+• Communication policy
+– Emails and course announcements
+• Classroom policy
+– Mute laptops & cell phones, but be out loud when 
 speaking
- Academic honestyMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+• Academic honestyMISSI"
+"SSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 12Software Engineering RecapMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-13 Why do we call i"
-"t Software Engineering not 
-Manufacturing?
- Why do we engineer software?SE Reviews (Some Questions)
+13• Why do we call it Software “Engineering” not 
+“Manufacturing”?
+• Why do we engineer software?SE Reviews (Some Questions)
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-14 Why do we engineer software?
- To solve customers problem via software-intensive 
+14• Why do we engineer software?
+– To solve customer’s problem via software-intensive 
 systems
- To produce quality software within"
-" budget and schedule
- To show/demonstrate/prove the software is indeed high 
-qualityWhats a problem?
+– To produce quality software within budget and sc"
+"hedule
+– To show/demonstrate/prove the software is indeed high 
+qualityWhat’s a “problem”?
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 15Software Engineer: Agent of Change
 Picture source: Internet
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENG"
-"INEERING
-16 The holders of the bets in a gambling game
- Those who have a stake in the change being considered & 
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+16• The holders of the bets in a gambling game
+• Those who have a stake in the change being considered & 
 who stand to gain or lose from the changeStakeholders
 Source: Loucopoulos & Karakostas, 1995, p73
+MISSISSIP"
+"PISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+17But software changes the world…
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-17But software c"
-"hanges the world
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-18 Q1: Why do we engineer software?
- deliver quality software
- Q2: How do we achieve quality software 
+18• Q1: Why do we engineer software?
+– deliver quality software
+• Q2: How do we achieve quality software 
 (product)?
- Q3: What are process (lifecycle) models?
- (What role do testing & QA play in these models?)SE R"
-"eviews (3 Questions)
+• Q3: What are process (lifecycle) models?
+– (What role do “testing & QA” play in these models?)SE Reviews (3 Questions)
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 19Waterfall Model
- A view on development
- A process of stepwise 
+• A view on "
+"development
+– A process of stepwise 
 refinement
- Largely a high-level 
+– Largely a high-level 
 management view
- Problems
- Static view of requirements
- Ignores volatility
- Lack of user involvement 
-once "
-"specification is written
- Unrealistic assumption that 
+• Problems
+– Static view of requirements
+• Ignores volatility
+– Lack of user involvement 
+once specification is written
+– Unrealistic assumption that 
 customer can state all 
 requirements explicitly
- Doesnt accommodate 
+– Doesn’t accommodate 
 prototyping, reuse, etc.
 Source: Dorfman, 97; Loucopoulos & Karakostas, 95MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 20
-V  Model
-Adapted from: R. "
-"Pressman, SE Book (textbook), 2010MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+V – Model
+Adapted from: R. Pressman, SE Book (textbo"
+"ok), 2010MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 21The Spiral Model
 Adapted from: R. Pressman, SE Book, 2010; Pic. Source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 22
-eXtreme Programming (XP)MISSISSIPPI"
-"STATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-23 Course Orientation
- SE Recap
- 3 questions & your views
- Setting the stage of quality
- Homework
- Study the syllabus carefully
- Review todays slides
- Next class
- Introduction to testingSummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMP"
-"UTERSCIENCE AND ENGINEERING
+eXtreme Programming (XP)MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+23• Course Orientation
+• SE Recap
+– 3 questions & your views
+– Setting the stage of “quality”
+• Homework
+– Study the syllabus carefully
+– Review today’s slides
+• Next class
+– "
+"Introduction to testingSummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 24THANKYOU
 "
 "MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
@@ -191,147 +182,140 @@ Dr. Tanmay Bhowmik
 tbhowmik@cse.msstate.edu
 Special thanks to Dr. Nan Niu & Dr. Byron WilliamsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 2Agenda
-This Topic:"
-"
+This Topic:
 Intro to Software Testing
 Next Topic:
 Types of TestingLast Topic:
 Class Orientation, 
 SE RecapMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 3What is the best way to learn?
-Terry Doyle
+–Terry Doyle"
+"
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-4 Q1: Why do we"
-" engineer software?
- Deliver quality software
- Q2: How do we achieve quality software 
+4• Q1: Why do we engineer software?
+– Deliver quality software
+• Q2: How do we achieve quality software 
 (product)?
- Q3: What are process (lifecycle) models?
- (What role do testing & QA play in these models?)SE Reviews (3 Questions)
+• Q3: What are process (lifecycle) models?
+– (What role do “testing & QA” play in these models?)SE Reviews (3 Questions)
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-5 Q1: Why do"
-" we engineer software?
- Deliver qualitysoftware
- Q2: How do we achieve quality software 
+5• Q1: Why do we engineer software?
+– Deliver qualitysoftware
+• Q2: How do we achieve quality software 
 (product)?
- Q3: What are process (lifecycle) models?
- (What role do testing & QA play in these models?)SE Reviews (3 Questions)
+• Q3: What ar"
+"e process (lifecycle) models?
+– (What role do “testing & QA” play in these models?)SE Reviews (3 Questions)
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 6Quality
- "
-"What is your definition of 
-high quality?
- Websters Dictionary 
-defines quality as: a 
+• What is your definition of 
+high “quality”?
+• Webster’s Dictionary 
+defines “quality” as: a 
 degree of excellence
-Deliver software system 
-that
- does what it is supposed to do
- does the things in a desired 
+•Deliver software system 
+that…
+– does what it is supposed to do
+– does the things in a desired 
 way
- show/demonstrate/prove the 
+– show/demonstrate/prove the 
 above two points
 Picture source: Internet
-MISSISSIPPISTATEUNIVERSI"
-"TY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-7 Why?
- Quality demonstration vs. defect detection and reduction
- How?
- Execution of software and checking results
- Must have some executable
- View (what types?)
- Functional/external/black-box
- Structural/internal/white-box
- Exit (when to stop?)
- Cove"
-"rage vs. usage-based Testing: Key IssuesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+MISSISSIPPISTATEUNIVERSITY TANMAY"
+"BHOWMIK COMPUTERSCIENCE AND ENGINEERING
+7• Why?
+– Quality demonstration vs. defect detection and reduction
+• How?
+– Execution of software and checking results
+• Must have some executable
+• View (what types?)
+– Functional/external/black-box
+– Structural/internal/white-box
+• Exit (when to stop?)
+– Coverage vs. usage-based Testing: Key IssuesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 8Testing: Why and How?
- Original purpose: demonstration of proper 
-behavior or quality demonstration
- testing in traditional settings
- e.g., test the car; test the projectors remote; test"
-" the candidate
- Evidence of quality or proper behaviorMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+• Original purpose: demonstration of proper 
+behavior or quality demonstrat"
+"ion
+– “testing” in traditional settings
+• e.g., test the car; test the projector’s remote; test the candidate
+– Evidence of quality or proper behaviorMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 9Testing: Why and How?
- New purpose: defect detection & reduction
- Achieve defect-free software
- Failure observation fault removal
- Fault detection fault fixing
- Erroridenti"
-"fication error prevention
- How?
+• New purpose: defect detection & reduction
+– Achieve defect-free software
+– Failure observation fault removal
+– Fault detection fault fixing
+– Erroridentification error prevention
+• How?
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-10Oracle: regarded as an infallible authority
+10"
+"“Oracle”: regarded as an infallible authority
 Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 11
-Test Case SpecificationMISSISSIPPISTATEUNIVERSITY"
-" TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+Test Case SpecificationMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 12Test Case Specification: Example
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-13 What artifacts are tested?
- Code
- What to test?
- from which view?
- related: type of faults found?
- When to stop testing?
- resource-based vs. q"
-"uality-basedTesting: How?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+13• What artifacts are tested?
+– Code
+• What to test?
+– from which view?
+– related: type of faults found?
+• When to stop testing?
+– resource-based vs. quality-bas"
+"edTesting: How?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 14Black-Box Testing (BBT) 
 vs. White-Box Testing (WBT)Testing: How?
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 15Black-Box Testing (BBT) 
-vs. White-Box Testing (WBT)Testing"
-": How?
+vs. White-Box Testing (WBT)Testing: How?
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-16 Functional testing
- Tests external functions
- as described by external specifications
- BBT in nature
- functional mapping: input output
- without involving internal knowledge
- Structural testing
- Tests internal implemen"
-"tations
- components and structures
- WBT in nature
- internal elements visible
- white seeing throughFunctional vs. Structural
+16• Functional testing
+– Tests external functions
+• as described by external specifications
+– BBT in nature
+• functional mapping: input outpu"
+"t
+• without involving internal knowledge
+• Structural testing
+– Tests internal implementations
+• components and structures
+– WBT in nature
+• internal elements visible
+• “white” seeing throughFunctional vs. Structural
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 17Functional or BBT
- What is a function as in mathematics?
-Picture source: InternetMISSISSIPPISTATEUNIV"
-"ERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-18 Function in software
- functional requirements
- external/visible features
- functional programming
- function/method in a class (OOP)
- procedure (in C)
- 
- Injection, surjection, bijection, partial function, mapping to 
-powerset function and their "
-"implications to software testingFunctional TestingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-19 Individual modules
- Statement
- Path (control flow) testing
- Data (flow) dependency testing
- Interaction of modules
- Sub-component
- Sub-systemStructural or WBTMISSISSIPPISTATE"
-"UNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+• What is a “function” as in mathematics?
+Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+18• Function in software
+– functional requirements
+– external/"
+"visible features
+– functional programming
+– function/method in a class (OOP)
+– procedure (in C)
+– …
+– Injection, surjection, bijection, partial function, mapping to 
+powerset function and their implications to software testingFunctional TestingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+19• Individual modules
+– Statement
+– Path (control flow) testing
+– Data (flow) dependency testing
+• Interaction of modules
+– Sub-component
+– Sub-systemStructural or WBTMISSISSIPPISTATEUNIVERSITY "
+"TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 20Comparing BBT with WBT
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-21 Testing
- Why?
- Quality demonstration vs. defect reduction
- How?
- Execute-observe-analyses/followup
- What types?
- BBT vs. WBT
- (When to stop?)
-"
-" Next week
- Testability, Types of TestingSummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+21• Testing
+– Why?
+• Quality demonstration vs. defect reduction
+– How?
+• Execute-observe-analyses/followup
+– What types?
+• BBT vs. WBT
+– (When to stop?)
+• Next week
+– Testability, Types of TestingSummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 22THANKYOU
 "
 "MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
@@ -341,204 +325,193 @@ Dr. Tanmay Bhowmik
 tbhowmik@cse.msstate.edu
 Special thanks to Dr. Nan Niu & Dr. Byron WilliamsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 2Agenda
-This Topic:"
-"
+This Topic:
 Types of Testing
 Next Topic:
 Testing the Requirement 
 (Creativity and RBT)Last Topic:
 Intro to TestingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 3Defect Resolution (overall)
- Actions agreed upon and impact / priority 
+• Actio"
+"ns agreed upon and impact / priority 
 determined
- Defect logging & tracking
- Consistent d"
-"efect interpretation & tracking
- Timely defect reporting (used to monitor and control 
+• Defect logging & tracking
+• Consistent defect interpretation & tracking
+• Timely defect reporting (used to monitor and control 
 projects)
- Learn from past problems (locations in the code, 
+• Learn from past problems (locations in the code, 
 defect types, developer issues)
- Developer Issues - conceptual mistakes, 
+• Developer Issues - conceptual mistakes, 
 unfamiliarity with domain, inexperience with 
-methodsMISSISSIPPISTATEUNIVERSIT"
-"Y TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-4 Ad-hoc testing
- run-and-observe
- Implicit checklists may be involved
- Drawbacks
- Lack of structure
- Likely to miss
- Likely to repeat oneself
- In general, the whole process is hard to repeat
- One way to structure is to build a checklistAd-Hoc TestingM"
-"ISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-5 Systematic process is explicitly defined
- Recall: how to achieve software quality (in Intro to SE)
- Testing with checklists
- List of items that must be tested Each item is checked 
-off When list is complete, testing is done
- E"
-"xamples
- Functional (black-box)
- System elements (white-box)
- Structures (implementation/white-box)
- Properties (black-box or white-box)Systematic Testing: Checklists
+methodsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+4• Ad-hoc testing
+– “run-and-observe”
+– Implicit checklists may be inv"
+"olved
+• Drawbacks
+– Lack of structure
+– Likely to miss
+– Likely to repeat oneself
+– In general, the whole process is hard to repeat
+• One way to structure is to build a checklistAd-Hoc TestingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+5• “Systematic” ➔process is explicitly defined
+– Recall: how to achieve software quality (in Intro to SE)
+• Testing with checklists
+– List of items that must be tested Each item is “checked 
+off” When list is complete, testing is done
+• Examples"
+"
+– Functional (black-box)
+– System elements (white-box)
+– Structures (implementation/white-box)
+– Properties (black-box or white-box)Systematic Testing: Checklists
 Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-6 Function/feature 
-(external) chec"
-"klists
- Black-box in nature
- List of major functions 
+6• Function/feature 
+(external) checklists
+– Black-box in nature
+– List of major functions 
 that are expected
- An example high-level 
+• An example high-level 
 functional checklist for 
 an ATMFunctional Checklists: Exercise
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-7 Different forms of implementation checklists
- White-box in nature"
-" but at varying levels of 
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSC"
+"IENCE AND ENGINEERING
+7• Different forms of implementation checklists
+– White-box in nature but at varying levels of 
 abstraction
- E.g., lists of modules/components/etc. - Module 
+• E.g., lists of modules/components/etc. - Module 
 interaction patterns
- Example: coding standard
- Naming conventions: to improve software 
+• Example: coding standard
+– Naming conventions: to improve software 
 maintainability
- Functional (black-box)
- e.g., standard items (in concurrency control)
- ACID (atomicity, consistency, isol"
-"ation, durability)
- Locking (e.g., read-lock, write-lock, two-phase)
- Serialization (timestamp ordering, commit ordering, etc.)Implementation Checklists: Example
+• Functional (black-box)
+– e.g., standard items (in concurrency control)
+• ACID (atomicity, consistency, isolation, durability)
+• Locking (e.g., read-lock, write-lock, two-phase)
+• Serialization (timestamp ordering, commit o"
+"rdering, etc.)Implementation Checklists: Example
 Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-8Partition TestingMISSISSIPPISTATEUNIVER"
-"SITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-9 Sensitize test cases
- i.e., defining specific input variables and associated values 
+8Partition TestingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+9• Sensitize test cases
+– i.e., defining specific input variables and associated values 
 to exercise certain parts of the program in the white-box 
 view or to perform certain functions in the black-box view
- e.g., function add(int a, int b)
- consideri"
-"ng valid/invalid input values of a and b
- How many cases are in an exhaustive test?Testing for Partition Coverage
+– e.g., function add(int a, int b)
+– considering valid/invalid inpu"
+"t values of a and b
+• How many cases are in an exhaustive test?Testing for Partition Coverage
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-10 A set S contains a list of unique 
+10• A set S contains a list of unique 
 elements
- A partition of S creates subsets G1, G2, 
- Gn such that
- Sets are"
-" mutually exclusive
- Sets are collectively exhaustive
- Each G1...Gn in a partition is called an 
+• A partition of S creates subsets G1, G2, 
+… Gn such that
+– Sets are mutually exclusive
+– Sets are collectively exhaustive
+• Each G1...Gn in a partition is called an 
 equivalence class , where the specific 
 relation that is used to define the subsets 
 is:
- Reflexive - holds on every member 
- Symmetric - holds if order is change
- Transitive - holds in a relation chainP"
-"artitions: Formal Definitions
+– Reflexive - holds on every member 
+– S"
+"ymmetric - holds if order is change
+– Transitive - holds in a relation chainPartitions: Formal Definitions
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-11 Whats a partition? Can you give an example?Partitions
+11• What’s a partition? Can you give an example?Partitions
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-12 Basic ideas
- Members in equivalence class are treated equivalent"
-" Defining 
+12• Basic ideas
+– Members in equivalence class are treated “equivalent” Defining 
 meaningful partitions
- Sampling from partitioned subsets for different types of partitions
- Coverage of partitions: uniform
- Different types of partitions
- Pure membership based partitions:
- e.g., components in a subsystem, negative numbers, positive numbers
- direct sampling, e.g., one co"
-"mponent from each subsystem for coverage
- Properties/relations used in definitions:
- operations on numerical variables, e.g., x<=100 
- Combinations
- e.g., non-negative integers less than 21Partitions-Based TestingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-13Reliability "
-": Probability of failure-free operation for a 
+– Sampling from partitioned subsets for different types of partitions
+– Coverage of partitions:"
+" uniform
+• Different types of partitions
+– Pure membership based partitions:
+• e.g., components in a subsystem, negative numbers, positive numbers
+• direct sampling, e.g., one component from each subsystem for coverage
+– Properties/relations used in definitions:
+• operations on numerical variables, e.g., x<=100 
+– Combinations
+• e.g., non-negative integers less than 21Partitions-Based TestingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+13•Reliability : Probability of failure-free"
+" operation for a 
 specific period or a given set of input under a 
 specific environment
- Accomplished through
- availability, latency, performance, efficiency, change 
+• Accomplished through
+– availability, latency, performance, efficiency, change 
 management, monitoring, emergency response, and 
 capacity planning
-Key Measures - System Quality
- Mean-t"
-"ime-to-Failure (MTTF) - how often does the thing 
+•Key Measures - System Quality
+– Mean-time-to-Failure (MTTF) - how often does the thing 
 stop working
- Mean-time-to-Repair (MTTR) - once it stops working, how 
+– Mean-time-to-Repair (MTTR) - once it stops working, how 
 long does it take to fix itReliabilityMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-14UBST (Usage-Based Statistical Testing)
- UBST ensures reliability
- "
-"Reliability: Customer view of quality
- Probability: statistical modeling
- Time / input / environment
-OP: Operational Profile
- Quantitative characterization of the way a system will be 
+14UB"
+"ST (Usage-Based Statistical Testing)
+• UBST ensures reliability
+• Reliability: Customer view of quality
+– Probability: statistical modeling
+– Time / input / environment
+•OP: Operational Profile
+– Quantitative characterization of the way a system will be 
 used
- Generate/execute test cases for UBST
- Realistic reliability assessment - development 
-decisions/prioritiesMIS"
-"SISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-15 John D. Musa
- Giant in SRE (SW Reliability Eng.)
- OP
-Definition : a list of disjoint set of operations and their 
+– Generate/execute test cases for UBST
+– Realistic reliability assessment - development 
+decisions/prioritiesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+15• John D. Musa
+– Giant in SRE (SW Reliability Eng.)
+• OP
+–Definition"
+" : a list of disjoint set of operations and their 
 associated probabilities of occurrence
- A quantitative way of characterizing the way a software 
-system is or wil"
-"l be used
- Operations: multiple possible test cases or multiple runs
- Each operation corresponds to an individual sub-domain in domain 
+– A quantitative way of characterizing the way a software 
+system is or will be used
+– Operations: multiple possible test cases or multiple runs
+• Each operation corresponds to an individual sub-domain in domain 
 partitions, thus representing a whole equivalence class.OP (Operational Profile)
 Picture source: Internet
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE A"
-"ND ENGINEERING
-16Comparing BBT with WBT
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+16Comparing BBT with WBT
+MISSI"
+"SSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 17Usage-Based (Statistical) Testing
-Usage-based statistical testing (UBST)
- Actual usage and scenario/information
- Captured in operational profiles (OPs)
- Simulated in testing environment"
-" (problem?)
- (too numerous random sampling)
- Example: Canvas / beta-testing: add a course; delete a 
-course; produce reports
-Applicability
- Final stages of testing
- Particularly system/acceptance testing
- Use with software reliability engineering
-Termination criteria: reliability goalsMISSISSIPPISTA"
-"TEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-18 Coverage-based testing (CBT)
- Systematic testing based on formal models and techniques
- Testing models based on internal details or external 
+•Usage-based statistical testing (UBST)
+– Actual usage and scenario/information
+– Captured in operational profiles (OPs)
+– Simulated in testing environment (problem?)
+• (too numerous ➔random sampling)
+– Example: Canvas / beta-testing: add a course; delete a 
+course; produce reports…
+•Applicability
+– Final stages of testing
+– Particularly system/acceptance testing
+– Use with software reliability engineerin"
+"g
+•Termination criteria: reliability goalsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+18• Coverage-based testing (CBT)
+– Systematic testing based on formal models and techniques
+– Testing models based on internal details or external 
 expectations
- Coverage measures defined for models - Testing measured by 
+– Coverage measures defined for models - Testing measured by 
 coverage goals
- Exampl"
-"e: Canvas / unit-testing: post announcement & set 
-receiver role(s); set up submission deadline; 
- Applicability
- All stages of testing - Particularly unit and component testing
- Later phases at high abstraction levels
- Termination criteria: coverage goalsCoverage-Based TestingMISSISSIPPISTATEUNIVER"
-"SITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+– Example: Canvas / unit-testing: post announcement & set 
+receiver role(s); set up submission deadline; …
+• Applicability
+– All stages of testing - Particular"
+"ly unit and component testing
+– Later phases at high abstraction levels
+• Termination criteria: coverage goalsCoverage-Based TestingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 19
 Comparing UBST with CBTMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-20 Types of Testing
- Ad-hoc
- Systematic
- Partition-based
- Usage-based
- Coverage-based
- Next 
- TestabilitySummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWM"
-"IK COMPUTERSCIENCE AND ENGINEERING
+20• Types of Testing
+– Ad-hoc
+– Systematic
+– Partition-based
+– Usage-based
+– Coverage-based
+• Next 
+– TestabilitySummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 21THANKYOU
 "
 "MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
@@ -549,15 +522,14 @@ Assistant Professor
 Department of Computer Science and Engineering
 Mississippi State University
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-2 Req"
-"uirements engineering (RE)
- Involves interaction among multiple stakeholders
- Traditional RE
- Requirements exist in the stakeholders minds in 
+2• Requirements engineering (RE)
+– Involves interaction among multiple stakeholders
+• Traditional RE
+– Requirements exist in the stakeholders’ minds in 
 an implicit manner [Lemos et al.,2012 ]
- Customer drivenRequirements engineering (RE)
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERIN"
-"G
+– Customer drivenRequire"
+"ments engineering (RE)
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 3Requirements engineering (RE)
 Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
@@ -566,52 +538,50 @@ Requirements engineering (RE)
 Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 5
 Creativity in RE
-Picture source: Inter"
-"net
+Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-6 More critical in modern software industry
- Competition in the industry
- Multiple system in the same application domain
- Modern RE
-Creative requirements
-Improve sustainabilityCreativity in REMISSISSIPPISTATEUNIVERSITY TANM"
-"AYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-7 Creativity [Sternberg, 1999]
- Ability to produce work that is both
- Novel
- original and unexpected
- Appropriate
- useful and adaptive to task constraintsCreativity in REMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-8 Creativity [S"
-"ternberg, 1999]
- Ability to produce work that is both
- Novel
- original and unexpected
- Appropriate
- useful and adaptive to task constraints
- In RE [Maiden et al., 2010]
- Capture of requirements
- New to the stakeholders
- May not be historically new to humankind
-Creativity in REMISSISSIPPISTATEUNIVERS"
-"ITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-9 Categories of Creativity [Boden, 2003]
- Exploratory
- Combinational
- Transformational
+6• More critical in modern software indus"
+"try
+– Competition in the industry
+– Multiple system in the same application domain
+• Modern RE
+–Creative requirements
+–Improve sustainabilityCreativity in REMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+7• Creativity [Sternberg, 1999]
+– Ability to produce work that is both
+• Novel
+– original and unexpected
+• Appropriate
+– useful and adaptive to task constraintsCreativity in REMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+8• Creativity [Sternberg, 1999]
+–"
+" Ability to produce work that is both
+• Novel
+– original and unexpected
+• Appropriate
+– useful and adaptive to task constraints
+• In RE [Maiden et al., 2010]
+– Capture of requirements
+• New to the stakeholders
+• May not be historically new to humankind
+Creativity in REMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+9• Categories of Creativity [Boden, 2003]
+– Exploratory
+– Combinational
+– Transformational
 Access 
 ControlX
 ZYCreativity in RE
 Fingerprint
 Facial 
 recognition
-Log-in ID, 
+Log-in ID, "
+"
 PasswordMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-10"
-" Categories of Creativity [Boden, 2003]
- Exploratory
- Combinational
- Transformational
+10• Categories of Creativity [Boden, 2003]
+– Exploratory
+– Combinational
+– Transformational
 Access 
 Control
 Fingerprint
@@ -619,165 +589,157 @@ Facial
 recognition
 Log-in ID, 
 PasswordX
-Z
+Z’
 Retina
 scan
 DNA
 scanY
 ZCreativity in REMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 11System New Requirement
-Firef"
-"oxF1: Firefox should provide floating tab-view
+FirefoxF1: Firefox should provide floating tab-view
 F2: Firefox should provide buttonfor savingall tabs
-F3: Firefox should informusers the countof open tabs
+F3: Firefox should infor"
+"musers the countof open tabs
 F4: Firefox user can selecttext savingdirectly into files
 F5: Firefox should provide arrowto browse tabs
-F6: Firefox users can zoomin/out by a dragg"
-"ing slider
+F6: Firefox users can zoomin/out by a dragging slider
 F7: Firefox user can textphone number from the web page
 F8: Firefox can parallel tab-viewCreativity in RE
 Source: Bhowmik et al., 2020MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 12
-Creativity in REMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND EN"
-"GINEERING
-13
 Creativity in REMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-14 Creativity [Sternberg, 1999]
- Ability to produce work that is both
- Novel
- original and unexpected
- Appropriate
- useful and adaptive to task constraints
- Rate the requirements at a 5-point Likert"
-" Scale
+13
+Creativity in REMISSIS"
+"SIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+14• Creativity [Sternberg, 1999]
+– Ability to produce work that is both
+• Novel
+– original and unexpected
+• Appropriate
+– useful and adaptive to task constraints
+• Rate the requirements at a 5-point Likert Scale
 1 = least innovative
 2 = not innovative
 3 = neutral
 4 = innovative
 5 = most innovativeHow to measure creativity in RE?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-15 Kappa statistic is used to show the level of 
+15• Kappa statistic is used to show the le"
+"vel of 
 agreement among participants [Manning et al. 2008]
- F"
-"irefox: 0.79
+– Firefox: 0.79
 012345
 F1 F2 F3 F4 F5 F6 F7 F8Firefox: Avg. RatingHow to measure creativity in RE?
 Source: Bhowmik et al., 2020MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 16System New Requirement
 FirefoxF1: Firefox should provide floating tab-view
-F2: Firefox should provide"
-" buttonfor savingall tabs
+F2: Firefox should provide buttonfor savingall tabs
 F3: Firefox should informusers the countof open tabs
 F4: Firefox user can selecttext savingdirectly into files
-F5: Firefox should provide arrowto browse tabs
+F5: Firefox s"
+"hould provide arrowto browse tabs
 F6: Firefox users can zoomin/out by a dragging slider
 F7: Firefox user can textphone number from the web page
-F8: Fi"
-"refox can parallel tab-viewHow to measure creativity in RE?
+F8: Firefox can parallel tab-viewHow to measure creativity in RE?
 Is such a single rating sufficient?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 17How to measure creativity?
 Picture source: Internet
- $300 M$112.5 M$103.4 M$119.9 M $149.7 MMISSISSIPPISTATEUNIVERSITY TANMAYBHOWM"
-"IK COMPUTERSCIENCE AND ENGINEERING
-18 Creativity [Sternberg, 1999]
- Ability to produce work that is both
- Novel
- original and unexpected
- Appropriate
- useful and adaptive to task constraints
- Rate the requirements at a 5-point Likert Scale
+ $300 M$112.5 M$103.4 M$119.9 M $149.7 MMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+18• Creativity [Sternberg, "
+"1999]
+– Ability to produce work that is both
+• Novel
+– original and unexpected
+• Appropriate
+– useful and adaptive to task constraints
+• Rate the requirements at a 5-point Likert Scale
 1 = least innovative
 2 = not innovative
 3 = neutral
-4 = inno"
-"vative
+4 = innovative
 5 = most innovativeHow to measure creativity in RE?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-19 In Recent Years
- Clarity
- Unambiguous, provides an appropriate level of 
+19• In Recent Years
+• Clarity
+– Unambiguous, provides an appropriate level of 
 detail
- Novelty
- Users find it original and unexpected
- something that is not common place, m"
-"undane, or 
+• Novelty
+– Users find it original and unexpected
+"
+"• something that is not common place, mundane, or 
 conventional
- Usefulness
- Useful & implementable
- Provides value or utility to the usersHow to measure creativity in RE?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-20 Clarity
- Novelty
- Usefulness
- Rate the requirements at a 5-point Likert Scale
+• Usefulness
+– Useful & implementable
+– Provides value or utility to the usersHow to measure creativity in RE?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+20• Clarity
+• Novelty
+• Usefulness
+• Rate the requirements at a 5-point Likert Scale
 1 = very low
-2"
-" = low
+2 = low
 3 = medium
 4 = high
 5 = very highHow to measure creativity in RE?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 21
-How to measure creativity in RE?
+How to measure cre"
+"ativity in RE?
 Picture source: Do et al., 2020MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-22How to measur"
-"e creativity?
- Facet-Level-Measurement Approach [Batey, 
+22How to measure creativity?
+• Facet-Level-Measurement Approach [Batey, 
 2012]
- Facet: What is being measured?
- The 4 Ps
- Person (trait)
- Process
- Press (environment)
- Product
+• Facet: What is being measured?
+– The 4 Ps
+• Person (trait)
+• Process
+• Press (environment)
+• Product
 Person X Process X Press = Product MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 23How to measure creativity?
- Le"
-"vel: We are measuring the facet at what 
+• Level: We are measuring the facet at what 
 level?
- The 4 levels
- Culture
- Organization
- Team
- Individual
+– The 4 levels
+• Cultu"
+"re
+• Organization
+• Team
+• Individual
 Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 24How to measure creativity?
- Measurement Approach: How to measure a 
+• Measurement Approach: How to measure a 
 facet at a specific level?
- O"
-"bjective measure
- # of patents for an inventor, # of exhibitions for an artist
- Subjective measure
- From the focal point of analysis, done internally
- E.g., self-rating, rating from the team members about 
+– Objective measure
+• # of patents for an inventor, # of exhibitions for an artist
+– Subjective measure
+• From the focal point of analysis, done internally
+• E.g., self-rating, rating from the team members about 
 the product they built
- Other-ratings
- Rating provided by an external subject matter expertMIS"
-"SISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+– Other-ratings
+• Rating provided by an ex"
+"ternal subject matter expertMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 25How to measure creativity in RE?
- A three dimensional heuristic framework by 
+• A three dimensional heuristic framework by 
 Mark Batey [Batey, 2012]
 Product = Requirement 
 Ratings: Objective, ExpertMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-26 "
-"Levels and kind of creativity in products 
+26• Levels and kind of creativity in products 
 [Cropley & Cropley, 2005]How to measure creativity in RE?
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-27 The Creative Solution Diagnosis Scale (CSDS) with 
-30 attributes [adapted from Cropley et al., 2011]How to measure creativi"
-"ty in RE?
+27• T"
+"he Creative Solution Diagnosis Scale (CSDS) with 
+30 attributes [adapted from Cropley et al., 2011]How to measure creativity in RE?
 27 different attributesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-28 The question we would like to askHow to measure creativity in RE?
+28• The question we would like to askHow to measure creativity in RE?
 Can we adapt CSDS to measure creativity in RE?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-29Defi"
-"ning the attributes in RE
+29Defining the attributes in RE
 Attribute General Definition RedefineinRE
-Correctness The solution accurately 
+Correctness The solut"
+"ion accurately 
 reflect conventional 
 knowledge and/or 
 techniqueThe requirement accurately reflects 
 conventional knowledge and/or 
 technique about the application 
 domain
-Appropriateness The solution fits with"
-"in task 
+Appropriateness The solution fits within task 
 constraintsThe requirement fits within the task 
 constraints. That is, given the 
 constraints/limitations of resources 
@@ -785,24 +747,23 @@ constraints/limitations of resources
 in hand, a successfully 
 implementation of the requirement 
 is possible. 
-adapted from Cropley et al., 2011MISSISSIPPISTATEUNIVERSIT"
-"Y TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+adapted from Cropley et al., 2011MISSISSIPPISTATEUNIVERSITY"
+" TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 30How to evaluate creativity in RE?
- 27 creativity attributes that should be used to 
+• 27 creativity attributes that should be used to 
 assess creativity merit of a requirement
-Correctness: The requirement accurately reflects 
+–Correctness: The requirement accurately reflects 
 conventional knowledge and/or technique about the 
 application domain
-Opera"
-"bility: The requirement is easy to use. That is, the 
+–Operability: The requirement is easy to use. That is, the 
 requirement does not have any negative effect on the 
 usability of the software system (it can be implemented in 
 such a way)
-Prognosis: The requirement helps the requirements 
+–Prognosis: The requirement he"
+"lps the requirements 
 engineer (or stakeholder) anticipate likely effects of 
-changes that "
-"will take place in the software
- ..MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+changes that will take place in the software
+– ……..MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 31Exercise
 Firefox can parallel tab-view
 AttributeRate
@@ -812,29 +773,27 @@ AttributeRate
 2-Disagree
 1-Strongly disagree
 1. Correctness: The requirement accurately reflects conventional 
-know"
-"ledge and/or technique about the application domain.
+knowledge and/or technique about the application domain.
 2. Performance: The requirement does what it is supposed to do. 
-That is, the requirement has a positive impact on the overall 
+"
+"That is, the requirement has a positive impact on the overall 
 functionality of the software system. Or, the requirement improves 
-the overall functionality (or, performance) of the "
-"software system. 
+the overall functionality (or, performance) of the software system. 
 In other words, the requirement makes the software more 
 attractive to the users.
 3. Appropriateness : The requirement fits within the task 
 constraints. That is, given the constraints/limitations of resources 
 (e.g., time, money, technology, etc.) in hand, a successfully 
-implemen"
-"tation of the requirement is possible.MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-32 Creativity in RE
- Why it is important?
- How to measure creativity?
- How to measure creativity in RE?
- Do we need a more sophisticated measurement 
+implementation of the requirement is p"
+"ossible.MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+32• Creativity in RE
+– Why it is important?
+• How to measure creativity?
+• How to measure creativity in RE?
+– Do we need a more sophisticated measurement 
 approach?
- Next 
- Requirements-Based Te"
-"stingSummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+• Next 
+– Requirements-Based TestingSummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 33THANKYOU
 "
 "MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
@@ -844,100 +803,95 @@ Dr. Tanmay Bhowmik
 tbhowmik@cse.msstate.edu
 Special thanks to Dr. Nan Niu & Dr. Byron WilliamsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 2Agenda
-This Topic:"
-"
+This Topic:
 Requirement Based Testing (RBT)
 Next Topic:
 TestabilityLast Topic:
 TestabilityMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-3 Quiz-1 
- Feb 8, online, during the first 10 mins of the class
- Covers up to the class of Feb 6To Do
+3• Quiz-1 
+– Feb 8, online, during the first 10 mins of the "
+"class
+– Covers up to the class of Feb 6To Do
 Picture source: Internet
-MISSISSIPPISTATEUNIVE"
-"RSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-4Recap: whatre requirements?
- Requirements = stakeholders needs and desires
- Stakeholders = those who have a stake in the 
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+4Recap: what’re requirements?
+• Requirements = stakeholders’ needs and desires
+• Stakeholders = those who have a stake in the 
 change being considered & who stand to (directly) 
-gain or lose from the changeMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPU"
-"TERSCIENCE AND ENGINEERING
-5Recap: whats RE & why?
- RE is about:
- Discovering stakeholders needs & desires
- Adjusting stakeholder expectations
- Communicating these to system implementers
- Adjusting implementer expectations
- Why RE:
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEE"
-"RING
+gain or lose from the changeMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+5Recap: what’s RE & why?
+• RE is about:
+– Discovering stakeholders’ needs & desires
+• Adju"
+"sting stakeholder expectations
+– Communicating these to system implementers
+• Adjusting implementer expectations
+• Why RE:
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 6Software Requirements and Design:
 A Tribute to Michael JacksonThe Meaning of Requirements
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 7R: requirements (optative/desired)
-: environment assertions (indicative/given)
-S: specifications (optative/desired)Understanding R"
-", , S
-Jackson, The Meaning of RequirementsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-8Understanding R, , S
- Jackson defines the meaning of requirements as:
+ε: environment assertions (indicative/given)
+S: specifications (optative/desired)Understanding R, ε, S
+Jackson, The "
+"Meaning of RequirementsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+8Understanding R, ε, S
+• Jackson defines the meaning of requirements as:
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-9Understanding R, , S
- Jackson defines th"
-"e meaning of requirements as:
- 
- things in the environment that are true
+9Understanding R, ε, S
+• Jackson defines the meaning of requirements as:
+• ε
+– things in the environment that are true
 whether or not we ever build the proposed 
 system
-R
- things in the environment that we wish to be made true by delivering 
+•R
+– things in the environment that we wish to be made true by delivering 
 the proposed system
- Many of which will involve phenomena to which the machine has no access
-S
- is a pre"
-"cise description of the programs behavior in order to meet the 
+• Many"
+" of which will involve phenomena to which the machine has no access
+•S
+– is a precise description of the program’s behavior in order to meet the 
 requirements
- Can only be written in terms of shared phenomena!
+• Can only be written in terms of shared phenomena!
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 10Example
-R
- The lab machine shall be accessible by only authorized 
-personnel
- 
- Auth. person has "
-"username
- Auth. person has password
- Passwords are never shared with non-authorized personnel
-S
- Access to the lab machine shall be granted only after the user 
-types an authorized username, password pair
- S + entail R: What does it mean?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND E"
-"NGINEERING
-11 Can you connect?
- As formality increases, tests and requirements become 
-indistinguishable. At the limit, theyre the equivalent.Requirements = Tests
-Picture source: Internet Guiding practice
- For most (if not all) software teams, the passing of acceptance tests, 
-as opposed to an exami"
-"nation of the requirements, is the final criterion 
+•R
+– “The lab machine shall be accessible by only authorized 
+personnel”
+• ε
+– Auth. person has username
+– Auth. person has password
+– Passwords are never shared with non-authorized personnel
+•S
+– Access to the lab mac"
+"hine shall be granted only after the user 
+types an authorized “username, password” pair
+• S + εentail R: What does it mean?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+11• Can you connect?
+– As formality increases, tests and requirements become 
+indistinguishable. At the limit, they’re the equivalent.Requirements = Tests
+Picture source: Internet• Guiding practice
+– For most (if not all) software teams, the passing of acceptance tests, 
+as opposed to an examination of the require"
+"ments, is the final criterion 
 for shipping a system.
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-12 Addresses 2 major issues:
- Check/validate the requirements for: 
- Correctness
- Completeness
- Ambiguity
- Logical Consistency
- Designing a set of test "
-"cases
- For those requirements
- From a black-box perspectiveRequirements-Based Testing (RBT)
+12• Addresses 2 major issues:
+– Check/validate the requirements for: 
+• Correctness
+• Completeness
+• Ambiguity
+• Logical Consistency
+– Designing a set of test cases
+• For those requirements
+• From a black-box perspectiveRequirements-Based Testing (RBT)
 Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 131. Validate requirement
-a) Validate against business objectives (Usefulness, Novelty)
-b) Ambiguity analysis "
-"/ Domain Expert review (Clarity, )
+a) Valid"
+"ate against business objectives (Usefulness, Novelty)
+b) Ambiguity analysis / Domain Expert review (Clarity, ε)
 2. Define test completion criteria
 3. Design test cases (define logical test cases)
 a) Structure/Formalize requirements
@@ -945,13 +899,13 @@ b) Build/Define test cases
 4. Execute tests
 5. Verify test results (pass/fail/improvement)
 a) Pass, fail, describe requirement improvement with 
-"
-"justification
+justification
 6. Verify test coverage
 7. Manage and track defects/improvements
 8. Manage the test libraryTesting: RBT Approach
 Req. 
-Quality
+Qu"
+"ality
 Design 
 Test Cases
 Execute, 
@@ -959,17 +913,16 @@ Outcome,
 Expectation
 MaintainMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 141. Validate requirement
-a)"
-" Validate against business objectives (Usefulness, Novelty)
-b) Ambiguity analysis / Domain Expert review (Clarity, )
+a) Validate against business objectives (Usefulness, Novelty)
+b) Ambiguity analysis / Domain Expert review (Clarity, ε)
 2. Define test completion criteria
 3. Design test cases (define logical test cases)
 a) Structure/Formalize requirements
 b) Build/Define test cases
 4. Execute tests
-5. Verify test resu"
-"lts (pass/fail/improvement)
-a) Pass, fail, describe requirement improvement with 
+5. Verify test results (pass/fail/improvement)
+a) Pass, fail, des"
+"cribe requirement improvement with 
 justification
 6. Verify test coverage
 7. Manage and track defects/improvements
@@ -980,200 +933,188 @@ Execute,
 Outcome,
 Expectation
 MaintainReq. 
-QualityMISSISSIPPISTATEUNIV"
-"ERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-15Title: Login Page  Authenticate Successfully 
+QualityMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+15•Title: Login Page – Authenticate Successfully 
 on gmail.com
-Description: A user should be able to successfully 
+•Description: A user should be able to successfully 
 login at gmail.com
- Validate requirements against business objectives
- But How?The RTB Methodology: An Example
-Source: InternetMISSISS"
-"IPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-16Title: Login Page  Authenticate Successfully 
+• Validate requirements against business objectives
+– But How?The RTB "
+"Methodology: An Example
+Source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+16•Title: Login Page – Authenticate Successfully 
 on gmail.com
-Description: A user should be able to successfully 
+•Description: A user should be able to successfully 
 login at gmail.com
- Validate requirements against business objectives
- But How?
- Think about Usefulness
- Very High?
- Thin"
-"k about Novelty
- Very Low?The RTB Methodology: An Example
+• Validate requirements against business objectives
+– But How?
+• Think about “Usefulness”
+– Very High?
+• Think about “Novelty”
+– Very Low?The RTB Methodology: An Example
 Likert Scale:
 1: Very Low 
 2: Low 
 3: Medium 
 4: High 
-5: Very HighMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-17Title: Login Page  Authenticate Successfully 
+5: Very HighMISSISSIPPISTATEUNIVERSITY "
+"TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+17•Title: Login Page – Authenticate Successfully 
 on gmail.com
-Description: A user should be able to suc"
-"cessfully 
+•Description: A user should be able to successfully 
 login at gmail.com
- Perform an initial ambiguity review
- Think about Clarity ( Likert Scale )
- Perform domain expert review
- But How?
- Think about Correctness and Completeness How?
- Think about  Environment Assertions 
+• Perform an initial ambiguity review
+– Think about “Clarity” ( Likert Scale )
+• Perform domain expert review
+– But How?
+– Think about “Correctness and Completeness” How?
+• Think about “ Environment Assertions ”
 User is already registered
-The web browser supports accessing email cl"
-"ientsThe RTB Methodology: An ExampleMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-18Title: Login Page  Authenticate Successfully 
+The web browser supports accessing email clientsThe RTB Methodology: An ExampleMISSISSIPPIS"
+"TATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+18•Title: Login Page – Authenticate Successfully 
 on gmail.com
-Description: A user should be able to successfully 
+•Description: A user should be able to successfully 
 login at gmail.com
- Define completion criteria
- ?????The RTB Methodology: An E"
-"xampleMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-19Title: Login Page  Authenticate Successfully 
+• Define completion criteria
+– ?????The RTB Methodology: An ExampleMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+19•Title: Login Page – Authenticate Successfully 
 on gmail.com
-Description: A user should be able to successfully 
+•Description: A user should be able to successfully 
 login at gmail.com
- Structure and formalize requirement
-Description: A registered user should be able to 
-su"
-"ccessfully login at gmail.com.
-Precondition: the user must already be registered with an email 
+• Structure and formalize requirement
+–De"
+"scription: A registered user should be able to 
+successfully login at gmail.com.
+•Precondition: the user must already be registered with an email 
 address and password.
-Assumption: a supported browser is being used.The RTB Methodology: An ExampleMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-20Title: Login Page  Authenticat"
-"e Successfully 
+•Assumption: a supported browser is being used.The RTB Methodology: An ExampleMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+20•Title: Login Page – Authenticate Successfully 
 on gmail.com
-Description: A user should be able to successfully 
+•Description: A user should be able to successfully 
 login at gmail.com
- Design test cases
- Using a supporting browser , navigate to gmail.com
- In the email field, enter the email of the registered user .
- Click the Next button.
- Enter the password of the registered user
-"
-" Click Sign InThe RTB Methodology: An ExampleMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-21Title: Login Page  Authenticate Successfully 
+• Design test cases
+– Using a supporting browser , naviga"
+"te to gmail.com
+– In the ‘email’ field, enter the email of the registered user .
+– Click the ‘Next’ button.
+– Enter the password of the registered user
+– Click ‘Sign In’The RTB Methodology: An ExampleMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+21•Title: Login Page – Authenticate Successfully 
 on gmail.com
-Description: A user should be able to successfully 
+•Description: A user should be able to successfully 
 login at gmail.com.
- Execute tests
- Verify test results (pass/fail/im"
-"provement)
- Pass?The RTB Methodology: An ExampleMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-22Title: View Access Log
-Description: The patient chooses to view his or her access log or that 
+• Execute tests
+• Verify test results (pass/fail/improvement)
+– Pass?The RTB Methodology: An ExampleMIS"
+"SISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+22•Title: View Access Log
+•Description: The patient chooses to view his or her access log or that 
 for a person for whom they are a personal health representative. The 
-patient then"
-" chooses the beginning and end date for the period of time 
+patient then chooses the beginning and end date for the period of time 
 they would like to view their access log for [S1, S2]. The resulting list 
 should include the following for each access:
-Name of non-DLHCP accessor (with a link to contact information if the viewer is an 
+–Name of non-DLHCP accessor (with a link to contact information if the viewer is"
+" an 
 LHCP)
-Role of non-DLHCP accessor re"
-"lative to the patient
-Date and time of access
-Transaction Type
- [S1] By default, the patient is presented with a list sorted by dates, most recent 
+–Role of non-DLHCP accessor relative to the patient
+–Date and time of access
+–Transaction Type
+• [S1] By default, the patient is presented with a list sorted by dates, most recent 
 access first.
- [S2] The patient may choose to view the list sortedby the roleof the accessor
-relative to the patient (personal health representative, LH"
-"CP, UAP, Emergency 
+• [S2] The patient may choose to view the list sortedby the roleof the accessor
+relative to the patient (personal health representative, LHCP, UAP, Emergency 
 Responder; any order is fine as long as the list is sorted by role) as well as by 
-date for each role type , most recent access first.RBT: An example using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-23Title: View Access Log
-Descriptio"
-"n: The patient chooses to view his or her access log or that 
+date for each role type , most recent access first.RBT: An examp"
+"le using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+23•Title: View Access Log
+•Description: The patient chooses to view his or her access log or that 
 for a person for whom they are a personal health representative. The 
 patient then chooses the beginning and end date for the period of time 
 they would like to view their access log for [S1, S2]. 
- Validate requirements against business "
-"objectives
- ????RBT: An example using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-24Title: View Access Log
-Description: The patient chooses to view his or her access log or that 
-for a person for whom they are a personal health representative. The 
-patien"
-"t then chooses the beginning and end date for the period of time 
-they would like to view their access log for [S1, S2]. 
- Perform an initial ambiguity review
- Perform domain expert review
- What are some environment assertions?
- Multiple accessor may have same name
- Same accessor may have multiple r"
-"oles 
- A patient may have a long history
- A working/supporting browser is availableRBT: An example using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-25Title: View Access Log
-Description: The patient chooses to view his or her access log or that 
-for a per"
-"son for whom they are a personal health representative. The 
-patient then chooses the beginning and end date for the period of time 
-they would like to view their access log for [S1, S2]. 
- Define completion criteria
- ????RBT: An example using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK"
-" COMPUTERSCIENCE AND ENGINEERING
-26Title: View Access Log
-Description: The patient chooses to view his or her access log or that 
+• Validate requirements against business objectives
+– ????RBT: An example using iTrust use casesMISSISSIPPISTATEUNIVE"
+"RSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+24•Title: View Access Log
+•Description: The patient chooses to view his or her access log or that 
 for a person for whom they are a personal health representative. The 
 patient then chooses the beginning and end date for the period of time 
-they would like to view thei"
-"r access log for [S1, S2]. 
- Structure and formalize requirement
- Skip for nowRBT: An example using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-27Title: View Access Log
- Design test cases
- Using a supporting browser , log-in to iTrust as a patient
- Click "
-"View Access Log
- Check the column headers in the log for Name, Role, Date 
+they would like to view their access log for [S1, S2]. 
+• Perform an initial ambiguity review
+• Perform domain expert review
+– What are some environment assertions?
+• Multiple accessor may have same name
+• Same accessor"
+" may have multiple roles 
+• A patient may have a long history
+• A working/supporting browser is availableRBT: An example using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+25•Title: View Access Log
+•Description: The patient chooses to view his or her access log or that 
+for a person for whom they are a personal health representative. The 
+patient then chooses the beginning and end date for the period of time 
+they would like to view their access log for [S1, S2]. "
+"
+• Define completion criteria
+– ????RBT: An example using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+26•Title: View Access Log
+•Description: The patient chooses to view his or her access log or that 
+for a person for whom they are a personal health representative. The 
+patient then chooses the beginning and end date for the period of time 
+they would like to view their access log for [S1, S2]. 
+• Structure and formalize requirement
+– Skip for nowRBT: An example "
+"using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+27•Title: View Access Log
+• Design test cases
+– Using a supporting browser , log-in to iTrust as a patient
+– Click “View Access Log”
+– Check the column headers in the log for Name, Role, Date 
 and time of access, Transaction Type
- Sort on Date
- Sort on Role
- Type Start Date, End Date and click Filter
- Select a different name, if any, from View log for and 
-click Filter. Do the same changing the dates as well.
-(Chec"
-"k the outcome at every stage and note down if anything is wrong)RBT: An example using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-28Title: View Access Log
- Execute tests: Using a supporting 
-browser, log-in to iTrust as a patientRBT: An example using iTru"
-"st use cases
+– Sort on “Date”
+– Sort on “Role”
+– Type “Start Date”, “End Date” and click “Filter”
+– Select a different name, if any, from “View log for” and 
+click “Filter”. Do the same changing the "
+"dates as well.
+(Check the outcome at every stage and note down if anything is wrong)RBT: An example using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+28•Title: View Access Log
+• Execute tests: Using a supporting 
+browser, log-in to iTrust as a patientRBT: An example using iTrust use cases
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-29Title: View Access Log
- Execute tests: Click View Access LogRBT: An example using iTrust use cases
+29•Title: View Access Log
+• Execute tests: Click “View Access Log”RBT: An example using iTrust use case"
+"s
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-30Title: View Access Log
- Execute tests:"
-" Check column headers: Name, 
+30•Title: View Access Log
+• Execute tests: Check column headers: Name, 
 Role, Date & time, Transaction TypeRBT: An example using iTrust use cases
-Name of accessor
-Role of accessor
-Date and time of access
-Transaction TypeMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-31Title: View Access Log
- Execute tests: Sort on "
-"Date, Role, Type Start Date, End 
-Dateclick Filter; Select different name, if any, from View log for 
-and click Filter. Do the same changing the dates as well.RBT: An example using iTrust use cases
+–Name of accessor
+–Role of accessor
+–Date and time of access
+–Transaction TypeMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+31•Title: View Access Log
+– Execute tests: Sort on “Date”, “Role”, Type “Start Date”, “End 
+Date”click “Filter”; Select different name, if "
+"any, from “View log for” 
+and click “Filter”. Do the same changing the dates as well.RBT: An example using iTrust use cases
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-32Title: View Access Log
-Desc"
-"ription: The patient chooses to view his or her access log or that for a person for 
+32•Title: View Access Log
+•Description: The patient chooses to view his or her access log or that for a person for 
 whom they are a personal health representative. The patient then chooses the beginning 
 and end date for the period of time they would like to view their access log for [S1, S2]. 
- Verify test results (pass/fail/imp"
-"rovement)
- Failed
- Transaction type do not appear in column header names
- Name, Role, Date and time of access, Transaction Type in the log 
+• Verify test resul"
+"ts (pass/fail/improvement)
+– Failed
+• Transaction type do not appear in column header names
+• Name, Role, Date and time of access, Transaction Type in the log 
 are not shown in the order indicated
- Improvement: Patient should be able to sort the log based 
+– Improvement: Patient should be able to sort the log based 
 on accessor name as well
- Justification: Patient may have a lon"
-"g history, therefore a log with 
+• Justification: Patient may have a long history, therefore a log with 
 many accessors and roles. Multiple accessormay have same 
 name. Same accessor may have multiple roles. Patient may be 
-interested to find a specific accessor, not just the role or date. RBT: An example using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK CO"
-"MPUTERSCIENCE AND ENGINEERING
+interested to find a specific accessor"
+", not just the role or date. RBT: An example using iTrust use casesMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 331. Validate requirement
 a) Validate against business objectives
 b) Ambiguity analysis / Domain Expert review
@@ -1182,10 +1123,10 @@ b) Ambiguity analysis / Domain Expert review
 a) Structure/Formalize requirements
 b) Define test cases
 4. Execute tests
-5"
-". Verify test results (pass/fail/improvement)
+5. Verify test results (pass/fail/improvement)
 a) Pass, fail, describe requirement improvement with 
-justification
+ju"
+"stification
 6. Verify test coverage
 7. Manage and track defects/improvements
 8. Manage the test libraryAssignment on RBT
@@ -1196,8 +1137,7 @@ four
 activities 
 along 
 given 
-use caseMISSISSIPPIS"
-"TATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+use caseMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 34THANKYOU
 "
 "MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
@@ -1207,285 +1147,271 @@ Dr. Tanmay Bhowmik
 tbhowmik@cse.msstate.edu
 Special thanks to Dr. Nan Niu & Dr. Byron WilliamsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 2Agenda
-This Topic:"
-"
+This Topic:
 Testability
 Next Topic:
 Unit TestingLast Topic:
 RBTMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-3 Quiz-1 
- Feb 8, online, during the first 10 mins of the class
- Covers up to the class of Feb 6To Do
+3• Quiz-1 
+– Feb 8, online, during the first 10 mins of the class
+– Covers up to the cl"
+"ass of Feb 6To Do
 Picture source: Internet
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTE"
-"RSCIENCE AND ENGINEERING
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 4Testing Perspectives
-Developer  a 
+•Developer – a 
 person whose 
 primary 
 responsibility is to 
 write source code
- the output from 
+– the output from 
 the developers 
 should be 
 working software, 
 not just 
 something that 
 compiles
-Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIE"
-"NCE AND ENGINEERING
-5 To ensure that few, if any, defects remain in the 
-software when it is delivered to its customers or 
+Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+5• To ensure that few, if any, defects remain in the 
+software when it is delivered to its custome"
+"rs or 
 released to the marketQuality Assurance
 Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-6 Defined as: the execution of software"
-" and the 
+6• Defined as: the execution of software and the 
 observation of its behavior or outcome 
 demonstrated using controlled experiments
-Purpose :
- To demonstrate quality / proper behavior
- To detect problems that need to be fixed
- General Process Steps:
+•Purpose :
+– To demonstrate quality / proper behavior
+– To detect problems that need to be fixed
+• General Process Steps:
 1. Test Planning & Prep
 2. Test Execution
-3. Analysis & Follow-upTesting (operational) Def"
-"inition
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-7Error: A mistake made by a programmer or software 
+3. Analysis & Follow-upTesting (operational) Definition
+MISSISSIPPISTATE"
+"UNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+7•Error: A mistake made by a programmer or software 
 engineer which caused the fault, which in turn may 
 cause a failure
- conceptual mistakes
- human misunderstanding
- e.g., this is a Linux App. So it is going to be more "
-"secure anywayDefects / Bugs
+– conceptual mistakes
+– human misunderstanding
+• e.g., this is a Linux App. So it is going to be more secure anywayDefects / Bugs
 Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-8Fault: Condition / internal characteristic that may
+8•Fault: Condition / internal characteristic that may
 cause a failure in the system
- a mistake written down in code and/or document
- e.g., if(current_enroll =max_enrol) {//cann"
-"ot enroll any 
+– a mistake written dow"
+"n in code and/or document
+– e.g., if(current_enroll =max_enrol) {//cannot enroll any 
 more}
- SHOULD BE if(current_enroll ==max_enrol)              
+– SHOULD BE if(current_enroll ==max_enrol)              
 {//cannot enroll any more}Defects / Bugs
 Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-9Failure: Inability of the system to perform a function 
-according to its specificati"
-"on due to some fault
- deviation from expected behavior
- something goes wrong at execution
- e.g., student cannot enroll in a course even if nobody is currently 
+9•Failure: Inability of the system to perform a function 
+according to its specification due to some fault
+– deviation from expected behavior
+– something goes wrong at execution
+• e.g., student cannot enroll in a course even "
+"if nobody is currently 
 enrolled
- Can not withdraw money despite sufficient balance Defects / Bugs
+• Can not withdraw money despite sufficient balance Defects / Bugs
 Picture source: Internet
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK"
-" COMPUTERSCIENCE AND ENGINEERING
-10Bug: An abstract way of describing the above -
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+10•Bug: An abstract way of describing the above -
 problematic terms; avoidDefects / Bugs
 Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 11Defects
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERIN"
-"G
-12 The degree to which a system or component 
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+12• The degree to which a system or componen"
+"t 
 facilitates the establishment of test criteria and the 
 performance of tests to determine whether those 
 criteria have been met
- Plainly speaking  how hard it is to find faults in the 
+• Plainly speaking – how hard it is to find faults in the 
 software
- Testability is dominated by two practical problems
- How t"
-"o provide the test values to the software
- How to observe the results of test executionTestabilityMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-13 Testability is linked to our prior experience of the 
-things we want to test and our tolerance for defects -
-behavioral / huma"
-"n aspect
- The more testable the software, the greater the 
+• Testability is dominated by two practical problems
+– How to provide the test values to the software
+– How to observe the results of test executionTestabilityMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+13• Testability is linked to our prior experience of the 
+things we want to test "
+"and our tolerance for defects -
+behavioral / human aspect
+• The more testable the software, the greater the 
 chance that somebody will test it, that is, verify that it 
 behaves correctly with respect to a specification or 
 some other expectationsTestable SoftwareMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-14Is untestabl"
-"e software going to be tested?Testable Software
+14Is untestable software going to be tested?Testable Software
 Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-15 If the software is 
+15• If the softw"
+"are is 
 developed so that its 
 behavior can be 
-verified, its easy to 
+verified, it’s easy to 
 confirm that it supports 
 a certain feature
- Fewer Surprises
- More e"
-"asily changed 
+• Fewer Surprises
+• More easily changed –
 Fear results in 
 duplication of defectsTestability Benefits
 Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 16Testability Quality Decomposed
-Picture source: InternetNOTE: When a program element is testable, it means that it can 
-be put"
-" in a known state , acted on, and then observed .
- Further, it means that this can be done without affecting or 
+Picture source: Internet•NOTE: When a program element is testable, it means that it can 
+be put in a known state , acted on, and then observed .
+• Further, it mean"
+"s that this can be done without affecting or 
 interfering any other program elements
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-17 The best test in the 
-world isnt worth 
+17• The best test in the 
+world isn’t worth 
 anything unless its 
-effects can"
-" be seen 
+effects can be seen 
 (observing output is 
 obvious)
- Other output not meant 
+• Other output not meant 
 for end-users 
- e.g., logs, temp files, 
+– e.g., logs, temp files, 
 diagnostic info - program 
 intrusions
- Achievable only by 
+– Achievable only by 
 developersObservability
 Picture source: Internet
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-18Observabil"
-"ity & Encapsulation
- Observability and information hiding are often at 
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AN"
+"D ENGINEERING
+18Observability & Encapsulation
+• Observability and information hiding are often at 
 odds with each other
- Although all of this is true, the root cause of the problem 
-isnt really information hiding or encapsulation, but poor 
+– Although all of this is true, the root cause of the problem 
+isn’t really information hiding or encapsulation, but poor 
 design and implementation, which, in turn, forces us to 
-ask the question of the decad"
-"e:
-Should I test private methods?
- Two Options
- open up the encapsulation by relaxing restrictions on accessibility 
+ask the question of the decade:
+•Should I test private methods?
+– Two Options
+• open up the encapsulation by relaxing restrictions on accessibility 
 to increase both observability and controllability
- consider the fact that testing at a level where we need to worry 
-about the observability of deeply buried monolithic spaghetti isn"
-"t 
+• consider t"
+"he fact that testing at a level where we need to worry 
+about the observability of deeply buried monolithic spaghetti isn’t 
 the course of action that gives the best bang for the buck at the 
 given moment
 Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-19 The ability to put something in a specific state
- we like to deal with determinism
- Is of paramount importance to any"
-" kind of testing 
+19• The ability to put something in a specific state
+– we like to deal with determinism
+• Is of paramount importance to any kind of testing 
 because it leads to reproducibility (?)
- When we get a bug report, we want to be able to 
+• When we get a bug report, w"
+"e want to be able to 
 reproduce the bug so that we may understand 
 under what conditions it occurs. Given that 
 understanding, we can fix it. The ability to reproduce 
-a given condition in a system, component, or c"
-"lass 
+a given condition in a system, component, or class 
 (program element) depends on the ability to isolate it 
 and manipulate its internal state.Controllability: IsolabilityMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 20Controllability: Isolability
- Being able to isolate the program element under 
-test be it a function,"
-" class, web service, or an 
+• Being able to isolate the program element under 
+test— be it a funct"
+"ion, class, web service, or an 
 entire system
- Modular (modularity, low coupling)
- related concepts are grouped together, and changes dont 
+• Modular (modularity, low coupling)
+– related concepts are grouped together, and changes don’t 
 ripple across the entire system
- Components with lots of dependencies are not only 
-difficult to modify, but also difficult to testMISSISSIPPISTATEUNIVERSITY TANMAY"
-"BHOWMIK COMPUTERSCIENCE AND ENGINEERING
-21 Is a measure of the amount of work needed to 
+• Components with lots of dependencies are not only 
+difficult to modify, but also difficult to testMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+21• Is a measure of the amount of work needed to 
 deploy the system, most notably, into production
- Deployability affects the developers ability to run 
-their code in a production-like environmentControllability: Deployability
+• Deployability affects the developers’ ability to run 
+their cod"
+"e in a production-like environmentControllability: Deployability
 Picture source: Internet
-MISSISSIP"
-"PISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-22 The bottom line is 
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+22• The bottom line is 
 that developers are 
 not to consider 
 themselves finished 
 with their code until 
-theyve executed it 
+they’ve executed it 
 in an environment 
 that resembles the 
 actual production 
 environmentControllability: Deployability
-Picture sou"
-"rce: Internet
+Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 23Smallness
- General rule: The smaller the software, the better 
+• General ru"
+"le: The smaller the software, the better 
 the testability
- less to test - fewer moving parts that need to be controlled 
+– less to test - fewer moving parts that need to be controlled 
 and observed
- primarily translates into the quantity of tests needed "
-"to 
+– primarily translates into the quantity of tests needed to 
 cover the software to achieve a sufficient degree of 
 confidence
- # of features & size (LOC, # methods, # classes, # 
+• # of features & size (LOC, # methods, # classes, # 
 functions)
- They both drive different aspects of testingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+– They both drive different aspects of testingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 24Smallness
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOW"
-"MIK COMPUTERSCIENCE AND ENGINEERING
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENC"
+"E AND ENGINEERING
 25Testability Quality Decomposed
-Picture source: InternetNOTE: When a program element is testable, it means that it can 
+Picture source: Internet•NOTE: When a program element is testable, it means that it can 
 be put in a known state , acted on, and then observed .
- Further, it means that this can be done without affecting any 
-other program elements "
-"and without them interfering
+• Further, it means that this can be done without affecting any 
+other program elements and without them interfering
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-26 In traditional methods, we try to define all correct behavior 
+26• In traditional methods, we try to define all correct behavior 
 completely, at the beginning
- What is correctness?
- Does correctness mean anything in large engineering products?
- People are VERY B"
-"AD at completely defining correctness
- In agile methods, one way to redefine correctness is to be 
+– What is correctness?
+– Does "
+"“correctness” mean anything in large engineering products?
+– People are VERY BAD at completely defining correctness
+• In agile methods, one way to redefine correctness is to be 
 relative to a specific set of tests
- If the software behaves correctly on the tests, it is correct
- Instead of defining all behaviors, we demonstrate some behaviors
- Mathematicians may be disappointed "
-"at the lack of 
+– If the software behaves correctly on the tests, it is “correct”
+– Instead of defining all behaviors, we demonstrate some behaviors
+• Mathematicians may be disappointed at the lack of 
 completenessA Limited View of Correctness
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-27 Tests must be automated
- Test automation is a prerequisite to test-driven 
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERI"
+"NG
+27• Tests must be automated
+– Test automation is a prerequisite to test-driven 
 development
- Every test must include a test oracle that can 
-evaluate whether that test exe"
-"cuted correctly
- The tests serve as a specification of requirements
- Tests must be of high quality and must run quickly
- Run tests every time we make a change to the 
+• Every test must include a test oracle that can 
+evaluate whether that test executed correctly
+• The tests serve as a specification of requirements
+• Tests must be of high quality and must run quickly
+• Run tests every time we make a change to the 
 softwareTest Harnesses Verify Correctness
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-28 Agile methods w"
-"ork best when the current version of 
+28• Agile methods work best when the current version"
+" of 
 the software can be run against all tests at any time
- Mistakes are caught earlier
- Other developers are aware of changes early
- The rebuild and re-verify must happen as soon as 
+• Mistakes are caught earlier
+• Other developers are aware of changes early
+• The rebuild and re-verify must happen as soon as 
 possible
- Thus, tests need to execute quicklyContinuous Integration
-MISSISSIPPISTAT"
-"EUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-29 A software engineering process where isolated code 
+– Thus, tests need to execute quicklyContinuous Integration
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+29• A software engineering process where isolated code 
 changes are immediately tested and reported on as 
 they are added to a larger codebase
- Developers incorporate their progress and code 
+• Developers incorporate their progress "
+"and code 
 changes to the codebase daily (or more frequently)
-"
-" The goal is to provide rapid feedback to identify and 
+• The goal is to provide rapid feedback to identify and 
 correct defects as soon as they are introduced
- Again, it enables automation
- Requires dedicated tools and automated tests to be 
-written for the systemContinuous IntegrationMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERI"
-"NG
-30 Testability
- Observability
- Controllability
- Smallness
- Continuous Integration
- Next 
- Unit Testing
- To DO
- Work on Assignment -1 
- Review todays slidesSummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+• Again, it enables automation
+• Requires dedicated tools and automated tests to be 
+written for the systemContinuous IntegrationMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+30• Testability
+– Observability
+– Controllability
+– Smallness
+• Continuous Integration
+• Next 
+– Unit Testing
+• To DO
+– Work on Assignment -1 
+– "
+"Review today’s slidesSummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 31THANKYOU
 "
 "MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
@@ -1495,321 +1421,304 @@ Dr. Tanmay Bhowmik
 tbhowmik@cse.msstate.edu
 Special thanks to Dr. Nan Niu & Dr. Byron WilliamsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 2Agenda
-This Class:"
-"
+This Class:
 Unit Testing
 Next Class:
 Boundary TestingLast Class:
 TestabilityMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-3Error: A mistake made by a programmer or software 
-engineer which caused the fault, which in turn may 
+3•Error: A mistake made by a programmer or software 
+engineer which caused"
+" the fault, which in turn may 
 cause a failure
- conceptual mistakes
- human misunderstandi"
-"ng
- e.g., when the class is full, student can still enroll if the 
+– conceptual mistakes
+– human misunderstanding
+– e.g., when the class is full, student can still enroll if the 
 instructor permitsDefects / Bugs (recap)
 Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-4Fault: Condition / internal characteristic that may
+4•Fault: Condition / internal characteristic that may
 cause a failure in the system
- a mistake w"
-"ritten down in code and/or document
- e.g., if(current_enrol=max_enrol) {//cannot enroll any 
+– a mistake written down in code and/or document
+– e.g., if(current_enrol=max_enrol) {//cannot enroll any 
 more}
- SHOULD BE if(current_enrol==max_enrol)              
+– SHOULD BE if(cur"
+"rent_enrol==max_enrol)              
 {//cannot enroll any more}Defects / Bugs (recap)
 Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-5"
-"Failure: Inability of system to perform a function 
+5•Failure: Inability of system to perform a function 
 according to its specification due to some fault
- deviation from expected behavior
- something goes wrong at execution
- e.g., student cannot enroll in a course even if nobody is 
+– deviation from expected behavior
+– something goes wrong at execution
+– e.g., student cannot enroll in a course even if nobody is 
 currently enrolledDefects / Bugs (recap)
 Picture source: Internet
-MISS"
-"ISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-6Bug: An abstract way of describing the above -
+MISSISSIPPISTATEUNIVERSITY T"
+"ANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+6•Bug: An abstract way of describing the above -
 problematic terms; avoidDefects / Bugs (recap)
 Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 7Defects (recap)
-MISSISSIPPISTATEUNIVE"
-"RSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 8Testability Quality Decomposed (recap)
-Picture source: InternetNOTE: When a program element is testable, it means that it can 
-be put in a known state , acted on, and then observed .
- Further, it means that this can be done without affecting any 
-"
-"other program elements and without them interfering
+Picture source: Internet•NOTE: When a program element is testable, it means that it can 
+be put in a known state , acted on, and then observed "
+".
+• Further, it means that this can be done without affecting any 
+other program elements and without them interfering
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 9Code-level Testability
- Some constructs and 
+• Some constructs and 
 behaviors in code have 
 great impact on its testability
-Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTER"
-"SCIENCE AND ENGINEERING
+Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 10Direct Input / Output
- Program elements behavior affected solely by 
-values that have been passed in via its public 
-interface  direct input
- Reliance on only direct input is quite a desirable 
+• Program element’s behavior affected solely by 
+values that have been passed in via its public "
+"
+interface — direct input
+• Reliance on only direct input is quite a desirable 
 property
- largest concern is to find relevant inputs to pass as 
-arguments to th"
-"e tested method
- not caring about other actors or circumstances that may 
+– largest concern is to find relevant inputs to pass as 
+arguments to the tested method
+– not caring about other actors or circumstances that may 
 affect its behavior
-direct output - return value - observable through 
+•direct output - return value - observable through 
 public interfaceMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 11Indirect Input / Output
- Input is considered indirect if it isnt"
-" supplied using 
-the program elements public interface
- Would I be able to test this without having access to the 
-source code?  no, indirect input
- e.g., static variables/methods, system properties, files, 
+• Input is considered indirect if it isn’t supplied using 
+the program element’s public i"
+"nterface
+– “Would I be able to test this without having access to the 
+source code?” … “no,” indirect input
+– e.g., static variables/methods, system properties, files, 
 databases, queues, etc.
-indirect output - no return value or return plus other 
-output - not"
-" observable through public interface
- reliance on system for output verificationMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+•indirect output - no return value or return plus other 
+output - not observable through public interface
+– reliance on system for output verificationMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 12Direct Input / Output
-1. Its consistent Given the same set of input 
-data, it always returns the same output value, 
-which doesnt depend on any h"
-"idden 
+1. It’s consistent —Given the same set of input 
+data, it always return"
+"s the same output value, 
+which doesn’t depend on any hidden 
 information, state, or external input.
-2. It has no side effects The function doesnt 
+2. It has no side effects —The function doesn’t 
 change any variables or data of any type 
 outside of the function. This includes output to 
 I/O devices.
 Indirect Input / Output
- Changing the value of a variable outside the 
+– Changing the value of a variable outside the 
 scope of the function
- Modifyin"
-"g data referenced by a parameter 
+– Modifying data referenced by a parameter 
 (call by reference)
- Throwing an exception
- Doing some I/O
-Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+– Throwing an exception
+– Doing some I/O
+Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYB"
+"HOWMIK COMPUTERSCIENCE AND ENGINEERING
 13State
-How do I set up a test so that I reach the correct state prior to
-verifying the expected behavior?MISS"
-"ISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+“How do I set up a test so that I reach the correct state prior to
+verifying the expected behavior?”MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 14Temporal Coupling
- Temporal coupling is a 
+• Temporal coupling is a 
 close cousin of state
- The order of invocation
- Given a program 
+• The order of invocation
+• Given a program 
 element with functions 
 f1 and f2, there exists a 
 temporal coupling 
 between them if, when 
 f2 is called, it expects 
-th"
-"at f1 has been called 
-firstthat is, it relies on 
-state set up by f1
+that f1 has been called 
+first—that is, it relies on 
+state "
+"set up by f1
 Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 15Unit Testing & TDDMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 16What is TDD?
- A software development "
-"technique that uses short 
+• A software development technique that uses short 
 development iterations 
- Based on pre-written test cases that define desired 
+• Based on pre-written test cases that define desired 
 improvements or new functions
- Each iteration produces code necessary to pass 
+• Each iteration produces code necessary to pass 
 that iteration's tests
- Then the programmer or team refactors the code to 
-accommodate changes 
- Preparing tests bef"
-"ore coding facilitates rapid 
+• Then the programmer or team refactors the code to 
+accomm"
+"odate changes 
+• Preparing tests before coding facilitates rapid 
 feedback changes
- TDDis a software design method , not just a method of 
+– TDDis a software design method , not just a method of 
 testingMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 17Test-Driven Development (TDD)
- A software development process 
-where a units tests are written 
-before the units im"
-"plementation 
-and guide the units development 
+• A software development process 
+where a unit’s tests are written 
+before the unit’s implementation 
+and guide the unit’s development 
 as the tests are executed 
 repeatedly until they all succeed, 
 signaling complete functionality.
- The TDD process steps are 
-commonly shortened to Red, 
-Green, Refactor
- Each time a new function, feature, 
+• The TDD process steps are"
+" 
+commonly shortened to “Red, 
+Green, Refactor”
+• Each time a new function, feature, 
 object, class, or other software unit 
-will be "
-"developed.
+will be developed.
 Picture source: Internet
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 18Test-Driven Development (TDD)
 1. Red
- Write a new test for a section of code (the unit)
- Verify failure of the new test and the success of existing tests. If the new test 
-passes, verify th"
-"at it is not redundant, then start composing the next test (step 
+• Write a new test for a section of code (the “unit”)
+• Verify failure of the new test and the success of existing tests. If the new test 
+passes, verify that it is not redundant, then start composing the next test (step 
 1a).
-2.   Green
- Write some code to implement, modify, or develop the unit
- Repeat until the tests pass. If one or more tests fail, continue coding until all 
+2.  "
+" Green
+• Write some code to implement, modify, or develop the unit
+• Repeat until the tests pass. If one or more tests fail, continue coding until all 
 tests pass. If the tests pass, the developer can be confident that the 
-new"
-"/modified code works as specified in the test. Stop coding immediately 
+new/modified code works as specified in the test. Stop coding immediately 
 once all tests pass.
 3.   Refactor
- Refactor the code to improve non-functional code structure, style, and quality
- Confirm tests pass. If one or more tests fail, the refactor caused problems; 
-edit until all tests pass. If the "
-"tests all pass, the developer can be confident 
+• Refactor the code to improve non-functional code structure, style, and quality
+• Confirm tests pass. If one or more tests fail, the refactor caused problems; 
+edit until all te"
+"sts pass. If the tests all pass, the developer can be confident 
 that the refactor did not effect any tested functionality.
 4.   [Repeat]MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-19TDD  Design Methodology
- Test-Driven Development (or test driven design) is a 
+19TDD — Design Methodology
+• Test-Driven Development (or test driven design) is a 
 methodology
- Common points"
-" about TDD:
- TDD is not (just) about testing
- TDD is about design and development
- By testing first you design your codeMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+• Common points about TDD:
+– TDD is not (just) about testing
+– TDD is about design and development
+– By testing first you design your codeMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEER"
+"ING
 20Unit Testing
- A test that invokes a small, testable unit of work in 
-a software system and then checks a "
-"single 
+• A test that invokes a small, testable unit of work in 
+a software system and then checks a single 
 assumption about the resulting output or behavior
- Key concept: Isolation from other software 
+• Key concept: Isolation from other software 
 components or units of code
- Low-level and focused on a tiny part or unit of a 
+• Low-level and focused on a tiny part or “unit” of a 
 software system
- Usually written by the programmers themselves 
+• Usually written by the programmers themselves 
 using common tools
- Can be written to be fast and run"
-" along with other 
-unit tests in automationMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+• Can be written to be fast and run along with other 
+unit tests in automationMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSC"
+"IENCE AND ENGINEERING
 21Unit Testing
- Form of white-box testing that focuses on the 
+• Form of white-box testing that focuses on the 
 implementation details
- Typically uses coverage criteria as the exit criteria
- Definition of a unit is sometimes ambiguou"
-"s
- Commonly considered to be the smallest testable unit 
+• Typically uses coverage criteria as the exit criteria
+• Definition of a “unit” is sometimes ambiguous
+– Commonly considered to be the “smallest testable unit” 
 of a system
- OOP languages: treat each object as a unit
- Functional or procedural languages: treat each function 
+– OOP languages: treat each object as a unit
+– Functional or procedural languages: treat each function 
 as a unit
- Many testing frameworks allow sets of unit tests to be 
+– Many testing frameworks allow sets of unit tests to be 
 grouped
- allows tests at the function level and grouped by the"
-"ir parent objectMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-22Software Testing Pyramid
+• allows tests at the function level and grouped "
+"by their parent objectMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+22Software Testing “Pyramid”
 Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 23Unit Testing vs TDD
- Unit testing and TDD are distinct concepts
- While closely relate"
-"d and often used together, they 
+• Unit testing and TDD are distinct concepts
+• While closely related and often used together, they 
 could be used separately
- The following slides and demos will present the two 
+• The following slides and demos will present the two 
 concepts combined, as they are frequently used 
 together
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+MISSISSIPPISTATEUNIVERSITY TANMA"
+"YBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 24
 The Problem
-MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK CO"
-"MPUTERSCIENCE AND ENGINEERING
+MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 25
 Example: Unit Tests (JavaScript + Jasmine)MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-26 Test Framework
- Defines the test writing syntax
- Likely language-specific because it hooks into the systems execution
-Examples : Jasmine, Mocha, Jest"
-" (for JavaScript); PyTest (for Python); 
+26• Test Framework
+– Defines the test writing syntax
+– Likely language-specific because it hooks into the system’s execution
+–Examples : Jasmine, Mocha, Jest (for JavaScript); PyTest (for Python); 
 JUnit (for Java)
- Test Runner
- Executes all (or a specific subset) of the systems unit tests and 
+• Test Runner
+– Executes all (or a specific subset"
+") of the system’s unit tests and 
 presents, displays, or otherwise outputs the results
- a local test runner on a developers computer or
- run on a server (e.g. a Continuous Integration (CI) server"
-")
- Might also spin up mocks, a virtual environment, or any other 
+• a local test runner on a developer’s computer or
+• run on a server (e.g. a Continuous Integration (CI) server)
+– Might also spin up mocks, a virtual environment, or any other 
 resources the tests require 
- Often a basic test runner is built into the test framework
- likely run via the command line
- Example: Karma (for web application testing)Unit Testing ToolsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTER"
-"SCIENCE AND ENGINEERING
+– Often a basic test runner is built into the test framework
+• likely run via the command line
+– Example: Karma (for web application testing)Unit Testing ToolsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AN"
+"D ENGINEERING
 27More Tools
- Mocks
- Provides a mock or simulated implementation of each 
+• Mocks
+– Provides a “mock” or simulated implementation of each 
 external dependency or resource required by the methods 
 being tested - aka. stub
- May return random, dummy, or cached data
- The need for mocks and their implementations varies 
+– May return random, dummy, or cached data
+– The need for mocks and their implementations varies 
 between systems
-Example "
-": EasyMock
- provides dynamically generated Mock objects (at runtime), without 
+–Example : EasyMock
+• provides dynamically generated Mock objects (at runtime), without 
 having to implement them
 Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 28More Tools
-Coverage Reporter
- Determines and provides a report on the test coverage 
-metrics of a"
-" set of code
- May generate metrics such as statement, branch, 
+"
+"•Coverage Reporter
+– Determines and provides a report on the test coverage 
+metrics of a set of code
+– May generate metrics such as statement, branch, 
 function, executions per line, and line coverage
- grouped by file, class, component, or for the entire system
- Might run independently or during each test executed by a 
+• grouped by file, class, component, or for the entire system
+– Might run independently or during each test executed by a 
 test runner
-Example : Istanbul (for JavaScript), Coverage.py (pytho"
-"n) 
-Tools like coveralls ( https://coveralls.io/ )
-Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-29 Open source Java testing framework used to write 
+–Example : Istanbul (for JavaScript), Coverage.py (python) 
+Tools like coveralls ( https://coveralls.io/ )
+Picture source: InternetMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COM"
+"PUTERSCIENCE AND ENGINEERING
+29• Open source Java testing framework used to write 
 and run repeatable automated tests (junit.org)
- A structure for writing test drivers adopted by man"
-"y 
-xUnit testing frameworks (.NET framework)
- JUnit features include:
-Assertions for testing expected results
-Test features for sharing common test data
-Test suites for easily organizing and running tests
- Graphical and textual test runners
- JUnit can be used as stand alone Java programs 
-(from the "
-"command line) or within an IDEWhat is JUnit?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-30 xUnit can be used to test 
- an entire object or part of an 
+• A structure for writing test drivers adopted by many 
+“xUnit” testing frameworks (.NET framework)
+• JUnit features include:
+–Assertions for testing expected results
+–Test features for sharing common test data
+–Test suites for easily organizing and running tests
+– Graphical and textual test runners
+• JUnit can be used as stand alone Java programs 
+(from the command line) or with"
+"in an IDEWhat is JUnit?MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+30• xUnit can be used to test …
+… an entire object or part of an 
 object, i.e., a method or some 
 interacting methods
- interaction between several 
+… interaction between several 
 objects
- It is primarily intended for "
-"unit and 
+• It is primarily intended for unit and 
 integration testing, not system testing
- Each test is embedded into one test 
+• Each test is embedded into one test 
 method
- A test class contains one or more test 
+• A test class contains one or more test 
 methods
- Test classes include :
- A collection of test methods
- Methods to set up the state before and 
+• Test classes include :
+– A collection of test methods
+– Methods to set up the st"
+"ate before and 
 update the state after each test and before 
-and after all te"
-"stsxUnit Tests
+and after all testsxUnit Tests
 MISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 31
 JUnit AssertionsMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
-32 Unit Testing
- Code-level testability
- Temporal coupling
- TDD
- Unit Testing
- Unit Testing tools
- Next topic
- Boundary "
-"TestingSummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
+32• Unit Testing
+– Code-level testability
+– Temporal coupling
+– TDD
+– Unit Testing
+– Unit Testing tools
+• Next topic
+– Boundary TestingSummaryMISSISSIPPISTATEUNIVERSITY TANMAYBHOWMIK COMPUTERSCIENCE AND ENGINEERING
 33THANKYOU
 "
