@@ -1,8 +1,10 @@
 import streamlit as st
 import initializeLLM as LLM
+import time
 
 # Added the PATENT Lab banner on the top
-st.image("Resources/banner.png", caption=None, width=None, use_column_width="auto", clamp=False, channels="RGB", output_format="auto")
+st.image("Resources/banner-new.png", caption=None, width=None, use_column_width="auto", clamp=False, channels="RGB", output_format="auto")
+st.divider()
 
 # Here we added the title of the app with the logo
 col1, col2, col3 = st.columns([2,1,6])
@@ -10,6 +12,7 @@ with col2:
     st.image("Resources/logo.png", caption=None, width=None, use_column_width="auto", clamp=False, channels="RGB", output_format="auto")
 with col3:
     st.header("Bully - Teaching Assistant")
+st.divider()
 
 # Introduced the bot application
 col1, col2, col3 = st.columns([1,9,2])
