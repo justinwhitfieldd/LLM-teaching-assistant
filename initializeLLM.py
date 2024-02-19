@@ -85,4 +85,4 @@ def get_response_wFunction(userInput):
         print("\n\n\n gpt messages",GPT_messages,"\n\n gpt messages")
         return second_response.choices[0].message.content
         
-    return GPT_response
+    return GPT_response.content
