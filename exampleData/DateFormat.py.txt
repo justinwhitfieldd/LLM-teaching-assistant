@@ -1,0 +1,30 @@
+# DateFormat.py
+"""  Given a "date string" of the form 'm/d/y' where m, d, and
+are string encodings of the month, day, and year, we show
+how to use the string method find to extract this information
+and display it in different ways.
+"""
+
+s = '9/11/2001'
+First  = s.find('/')
+Second = s.find('/',First+1)
+M = s[0:First]
+D = s[First+1:Second]
+Y = s[Second+1:]
+print '\nTake apart %s :' % s
+print '   Month = %s, Day = %s , Year = %s'% (M,D,Y)
+
+# Given a date string like '7-Jul-2014' we show how 
+# the string method replace and the  built-in function
+# len can be used to create the alternative format
+# '7JUL14'
+s = '20-Jan-2015'
+print '\nWe can rewrite %s as' % s
+# Get rid of the hyphens.
+s = s.replace('-','')
+# Get rid of the first two digits in the year.
+m = len(s)
+s = s[0:m-4] + s[m-2:]
+# Convert the month acronym to upper case
+s = s.upper()
+print '   ',s

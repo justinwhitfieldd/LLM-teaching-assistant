@@ -1,0 +1,21 @@
+# VowelFraction.py
+""" Given a string that is made up of upper and lower case
+letters, blanks, and a single period, we show how to use
+the string methods replace, lower, count, and find and the
+function len to compute the fraction of letters that are vowels.
+"""
+
+s = 'The Quick Brown Fox Jumped Over The Lazy Dog'
+print '\nInput string   = ',s
+# Convert everything to lower case and remove the blanks.
+s = s.lower()
+s = s.replace(' ','')
+# Compute the total number of letters and the total number of vowels
+numLetters = len(s)
+numVowels = s.count('a') + s.count('e') + s.count('i') + s.count('o') + s.count('u')
+fraction = float(numVowels)/float(numLetters)
+print 'Vowel fraction = %5.2f' %  fraction
+
+
+
+

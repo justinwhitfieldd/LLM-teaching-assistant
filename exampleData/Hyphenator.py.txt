@@ -1,0 +1,19 @@
+# Hyphenator.py
+""" Inputs a string and inserts hyphens.
+If the string has even length, the hyphen splits
+the first and second halves. Otherwise, a hyphen
+is inserted on either side of the middle character.
+"""
+
+s = input('Enter a string:' )
+n = len(s)
+if n%2==0:
+    # s has even length
+    m = n/2
+    h = s[0:m] + '-' + s[m:]
+else:
+    # s has odd length
+    m = n/2
+    h = s[0:m]+'-'+s[m]+'-'+s[m+1:]
+print s,h
+

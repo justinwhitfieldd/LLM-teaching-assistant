@@ -1,0 +1,75 @@
+# ShowPointClass.py
+""" Illustrate the class  Point
+"""
+
+from ThePointClass import *
+from SimpleGraphics import *
+
+def ShowPoint(P,c):
+    DrawDisk(P.x,P.y,.1,FillColor=c)
+    
+def Midpoint(P1,P2):
+    """ Returns a point that is the midpoint of
+    a line segment that connects P1 and P2.
+    
+    PreC: P1 and P2 are points.
+    """
+    xm = (P1.x+P2.x)/2.0
+    ym = (P1.y+P2.y)/2.0
+    Q = Point(xm,ym)
+    return Q
+
+def RandomPoint(Lx,Rx,Ly,Ry):
+    """ Returns a point that is randomly chosen
+    randomly from the square Lx<=x<=Rx, Ly<=y<=Ry.
+    
+    PreC: L and R are floats with L<R
+    """
+    x = randu(Lx,Rx)
+    y = randu(Ly,Ry)
+    P = Point(x,y)
+    return P
+
+if __name__ == '__main__':
+    """ demonstrates all the methods in the Point class
+    and some functions that manipulate Point objects.
+    """
+    
+    n = 3
+    MakeWindow(n)
+    for z in range(-n+1,n):
+        DrawLineSeg(z,-n,z,n)
+        DrawLineSeg(-n,z,n,z)
+        
+    # Create and display two points...
+    P = Point(1,2)
+    ShowPoint(P,RED)
+    Q = Point(-2,-2)
+    ShowPoint(Q,BLUE)
+    
+    # Indicate the distance between them...
+    d = P.Dist(Q)
+    Title('The Red-to-Blue distance is %5.2f' % d)
+    
+    # Compute and display the midpoint
+    M = Midpoint(P,Q)
+    ShowPoint(M,GREEN)
+    
+    # Reflect the red point...
+    S = P.Reflect()
+    ShowPoint(S,PINK)
+    
+    # Rotate the blue point 30 degrees about the origib...
+    T = Q.Rotate(30)
+    ShowPoint(T,CYAN)
+    
+    # Display ten random points...
+    for k in range(10):
+        P = RandomPoint(1,2,-2,-1)
+        ShowPoint(P,MAGENTA)
+    
+
+    ShowWindow()
+    
+
+

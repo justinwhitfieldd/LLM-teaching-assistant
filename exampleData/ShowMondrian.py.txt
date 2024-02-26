@@ -1,0 +1,54 @@
+#ShowMondrian.py
+""" Illustrates the recursive function Mondrian that produces
+randomly colored, randomly tiled rectangles.
+"""
+
+from SimpleGraphics import *
+from random import uniform as randu
+from random import randint as randi
+
+def RandomColor():
+    """ Returns a randomly selected color
+    """
+    colorList = [RED,BLUE,CYAN,MAGENTA,YELLOW,GREEN,PINK,ORANGE]
+    return colorList[randi(0,len(colorList)-1)]
+
+def Mondrian(x,y,L,W,level):
+    """ Draws an L-level Mondrian in an LxW rectangle
+    with center (x,y).
+    """
+    quitProb = .3
+    if level ==0 or (level<=2 and randu(0,1)<=quitProb):
+        # Base case. Draw the rectangle with a random color.
+        DrawRect(x,y,L,W,EdgeWidth=4,FillColor=RandomColor())
+    else:
+        # Compute the L's and W's and centers of the 4 subrectangles.
+        xc = randu(x-L/4,x+L/4)
+        L1 = xc-(x-L/2)
+        L2 = L-L1
+        yc = randu(y-W/4,y+W/4)
+        W1 = yc-(y-W/2)
+        W2 = W-W1
+        # The "southwest" subrectangle:
+        Mondrian(x-L/2+L1/2,y-W/2+W1/2 ,L1,W1,level-1)
+        # The "northwest" subrectangle:
+        Mondrian(x-L/2+L1/2,y+W/2-W2/2 ,L1,W2,level-1)
+        # The "northeast" subrectangle:
+        Mondrian(x+L/2-L2/2,y+W/2-W2/2 ,L2,W2,level-1)
+        # The "Southeas" subrectabngle 
+        Mondrian(x+L/2-L2/2,y-W/2+W1/2 ,L2,W1,level-1)
+
+if __name__ == '__main__':
+        # Draws a 1-level, 2-level, 3-level, and 4-level Mondrians
+        MakeWindow(2,labels=False)
+        Mondrian(0,0,3.,3.,1)
+        MakeWindow(2,labels=False)
+        Mondrian(0,0,3.,3.,2)
+        MakeWindow(2,labels=False)
+        Mondrian(0,0,3.,3.,3)
+        MakeWindow(2,labels=False)
+        Mondrian(0,0,3.,3.,4)
+        ShowWindow()
+        
+            
+

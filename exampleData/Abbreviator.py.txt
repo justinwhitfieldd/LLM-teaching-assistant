@@ -1,0 +1,24 @@
+# Abbreviator.py
+""" Inputs a string that encodes a name that is either one or
+    two words and displays its abbreviation according to certain rules.
+
+Rules:
+    1. A two-word name begins with either 'NEW', 'WEST', 'NORTH', or 'SOUTH'.
+    2. If the name is two words, then a single blank separates
+    the words and the abbreviation consists of  the first
+    letters of each, e.g., NEW JERSEY --> NJ
+    3. If the name is one word, then its abbreviation is its
+    first two letters, e.g., MASSACHUSETTS --> MA
+"""
+state = input('Enter a state name: ')
+
+if len(state) >=5 and (state[0:5] == 'South' or state[0:4] == 'North'):
+    abbreviation = state[0] + state[6]
+elif len(state)>=4 and state[0:4] == 'West':
+    abbreviation = state[0] + state[5]
+elif len(state)>=3 and state[0:3] == 'New':
+    abbreviation = state[0] + state[4]
+else:
+    abbreviation = state[0:2]
+print state, abbreviation
+

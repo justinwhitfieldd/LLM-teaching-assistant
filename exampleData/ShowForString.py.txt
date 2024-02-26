@@ -1,0 +1,38 @@
+# ShowForStrings.py
+"""  Illustrates the use of for-loops
+in problems where it is necessary to
+traverse a string."""
+
+
+def Reverse(s):
+    """ Returns a string that is obtained
+    from s by reversing the order of its characters.
+    
+    Precondition: s is a string."""
+    t =''
+    for c in s:
+        t = c+t
+    return t
+    
+def nDigits(s):
+    """ Returns an int whose value is the number
+    of digit characters that are in s.
+    Precondition: s is a string."""
+    n = 0;
+    for c in s:
+        # Increment n if c is a digit
+        if c.isdigit():
+            n=n+1
+    return n
+
+if __name__ == '__main__':
+    print 'Using raw_input so enter strings without  the apostrophe delimiters.\n'
+    x = raw_input('Enter a string to reverse: ')
+    y = Reverse(x)
+    print '              The reverse: %s' % y
+    x = raw_input('Enter a string with some digits: ')
+    m = nDigits(x)
+    print '               Number of digits: %1d' %m
+    
+
+
