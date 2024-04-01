@@ -3,7 +3,8 @@ import streamlit.components.v1 as components
 import initializeLLM as LLM
 import base64
 
-userSelectedPrompt = None
+# Global Variable
+triggered_once = True
 
 def load_css():
     with open("Resources/styles.css", "r") as f:
@@ -15,14 +16,47 @@ def initialize_session_state():
         st.session_state.history = []
 
 def on_click_callback():
+    global triggered_once
     human_prompt = st.session_state.human_prompt
     st.session_state.history.append({"role": "user", "content": human_prompt})
     if userSelectedPrompt == None:
-        response = "Please select one of the prompt before I can proceed to help you!"
+        response = "Please select one of the prompts before I can proceed to help you!"
         st.session_state.history.append({"role": "assistant", "content": response})
     else:
-        response = LLM.get_response_wFunction(human_prompt)
+        modified_prompt = ""
+        if userSelectedPrompt == "Explain Concept" and triggered_once:
+            modified_prompt = "Please provide a detailed explanation about " + human_prompt + " that a naive high school student can comprehend. Also, please provide a couple of code examples to use them along with the explanation"
+            triggered_once = False
+        elif userSelectedPrompt == "Take a Quiz" and triggered_once:
+            modified_prompt = "Please prepare a multiple-choice question about " + human_prompt + " with four possible choice as A, B, C, and D. Each option should be on a separate line. Three of them should be incorrect, and only one should be correct. Now let the user respond with their choice. ."
+            triggered_once = False
+        elif not triggered_once and (userSelectedPrompt == "Take a Quiz" or userSelectedPrompt == "Explain Concept"):
+            modified_prompt = human_prompt
+            # Check if the user's response is a valid choice for the quiz
+            if human_prompt.lower() in ["a", "b", "c", "d"]:
+                # Handle the user's response to the quiz
+                if human_prompt.lower() == "a":
+                    modified_prompt = "Your choice was A. Here is the follow-up based on choice A."
+                elif human_prompt.lower() == "b":
+                    modified_prompt = "Your choice was B. Here is the follow-up based on choice B."
+                elif human_prompt.lower() == "c":
+                    modified_prompt = "Your choice was C. Here is the follow-up based on choice C."
+                elif human_prompt.lower() == "d":
+                    modified_prompt = "Your choice was D. Here is the follow-up based on choice D."
+                st.session_state.history.append({"role": "assistant", "content": response})
+            else:
+                response = "Please select a valid choice (A, B, C, or D) for the quiz question."
+                st.session_state.history.append({"role": "assistant", "content": response})
+        # Combine the prompt with historical context
+        full_prompt = "\n".join([chat["content"] for chat in st.session_state.history]) + "\n" + modified_prompt
+        response = LLM.get_response_wFunction(full_prompt)
         st.session_state.history.append({"role": "assistant", "content": response})
+        
+
+
+def initialize_new_chat():
+    st.session_state.history = []
+    triggered_once = True
 
 load_css()
 initialize_session_state()
@@ -85,6 +119,11 @@ with chat_placeholder:
 
 with prompt_placeholder:
     cols = st.columns((6, 1))
+    # cols[0].form_submit_button(
+    #     "New Chat", 
+    #     type="secondary", 
+    #     on_click=on_click_callback,
+    # )
     cols[0].text_input(
         "Chat",
         value="Type your message here to Chatbot-TA!",
@@ -96,3 +135,8 @@ with prompt_placeholder:
         type="primary", 
         on_click=on_click_callback, 
     )
+
+# New Chat Button
+if st.button("New Chat"):
+    st.session_state.history = []
+    triggered_once = True
