@@ -6,6 +6,33 @@ import base64
 # Global Variable
 triggered_once = True
 
+def historical_context(history, user_response):
+    relevant_context = []
+    found_user_response = False
+
+    # Iterate through the history in reverse order
+    for i in range(len(history) - 1, -1, -1):
+        message = history[i]
+
+        # Check if the message is not None for both "assistant" and "user" roles
+        if message["content"] != "None":
+            # Check if the message is from the "user" role
+            if message["role"] == "user":
+                # Check if this is the user_response we are looking for
+                if not found_user_response and message["content"] == user_response:
+                    found_user_response = True
+                    continue  # Skip adding this message to the context
+
+                # Add the message to the relevant context
+                relevant_context.insert(0, message["content"])
+            elif found_user_response:
+                # Stop adding messages to the context once we have all relevant context
+                break
+
+    # Return the relevant context as a single string
+    return " ".join(relevant_context)
+
+
 def load_css():
     with open("Resources/styles.css", "r") as f:
         css = f"<style>{f.read()}</style>"
@@ -20,7 +47,9 @@ def on_click_callback():
     human_prompt = st.session_state.human_prompt
     st.session_state.history.append({"role": "user", "content": human_prompt})
     if userSelectedPrompt == None:
-        response = "Please select one of the prompts before I can proceed to help you!"
+        # Combine the prompt with historical context
+        full_prompt = historical_context(st.session_state.history, human_prompt)
+        response = LLM.get_response_wFunction(full_prompt)
         st.session_state.history.append({"role": "assistant", "content": response})
     else:
         modified_prompt = ""
@@ -48,7 +77,7 @@ def on_click_callback():
                 response = "Please select a valid choice (A, B, C, or D) for the quiz question."
                 st.session_state.history.append({"role": "assistant", "content": response})
         # Combine the prompt with historical context
-        full_prompt = "\n".join([chat["content"] for chat in st.session_state.history]) + "\n" + modified_prompt
+        full_prompt = historical_context(st.session_state.history, modified_prompt)
         response = LLM.get_response_wFunction(full_prompt)
         st.session_state.history.append({"role": "assistant", "content": response})
         
@@ -81,7 +110,9 @@ with col2:
     code = '''Hello bulldawgs! I am a virtual teaching assistant for
 Introduction to Computer Programming.'''
     st.code(code, language=None)
-    userSelectedPrompt = st.radio("In order for me to best serve you, please choose one of the following prompt:", ["Explain Concept", "Take a Quiz"],index=None,)
+    userSelectedPrompt = st.selectbox("You can choose one of the following prompt if you would like:", ("Explain Concept", "Take a Quiz"),index=None)
+    st.markdown("")
+    st.markdown("")
 
 chat_placeholder = st.container()
 prompt_placeholder = st.form("chat-form")
@@ -119,11 +150,6 @@ with chat_placeholder:
 
 with prompt_placeholder:
     cols = st.columns((6, 1))
-    # cols[0].form_submit_button(
-    #     "New Chat", 
-    #     type="secondary", 
-    #     on_click=on_click_callback,
-    # )
     cols[0].text_input(
         "Chat",
         value="Type your message here to Chatbot-TA!",
