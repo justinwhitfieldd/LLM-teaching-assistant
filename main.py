@@ -10,6 +10,9 @@ def historical_context(history, user_response):
     relevant_context = []
     found_user_response = False
 
+    if not history:
+        return user_response
+
     # Iterate through the history in reverse order
     for i in range(len(history) - 1, -1, -1):
         message = history[i]
@@ -28,6 +31,10 @@ def historical_context(history, user_response):
             elif found_user_response:
                 # Stop adding messages to the context once we have all relevant context
                 break
+
+    # If relevant_context is empty, return user_response
+    if not relevant_context:
+        return user_response
 
     # Return the relevant context as a single string
     return " ".join(relevant_context)
@@ -48,7 +55,7 @@ def on_click_callback():
     st.session_state.history.append({"role": "user", "content": human_prompt})
     if userSelectedPrompt == None:
         # Combine the prompt with historical context
-        full_prompt = historical_context(st.session_state.history, human_prompt)
+        full_prompt = human_prompt
         response = LLM.get_response_wFunction(full_prompt)
         st.session_state.history.append({"role": "assistant", "content": response})
     else:

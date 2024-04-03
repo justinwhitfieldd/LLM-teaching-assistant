@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from utils.vector_utils import query_vector_with_summary
 import json
 load_dotenv()
-model_engine = "gpt-3.5-turbo-1106"
+model_engine = "gpt-3.5-turbo-0125"
 promptFile = open('prompt.txt', 'r')
 prompt = promptFile.read()
 client = OpenAI(api_key = os.getenv('OPEN_AI_API_KEY'))
@@ -49,8 +49,8 @@ def get_response_wFunction(userInput):
         model=model_engine,
         messages=GPT_messages,
         temperature=0.25,
-        tools=GPT_tools,
-        tool_choice="auto", 
+        #tools=GPT_tools,
+        #tool_choice="auto", 
     )
 
     GPT_response = response.choices[0].message

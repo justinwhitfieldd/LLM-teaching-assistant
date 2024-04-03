@@ -303,7 +303,7 @@ def folder_paths(directory):
     return paths
 
 def summary_agent(prompt):
-    completion = client.chat.completions.create(model = "gpt-3.5-turbo",
+    completion = client.chat.completions.create(model = "gpt-4",
             temperature = 0.25,
             messages=[
                     {"role":"system", "content": "You give a brief summary of given text. \
@@ -349,6 +349,7 @@ def process_pdfs_and_create_csv(pdf_paths, csv_path, chunks_csv_path, chunk_size
     write_chunks_to_csv(all_chunks, chunks_csv_path)
 
     return csv_path, all_chunks
+
 def query_agent_stream(prompt, delay_time=0.01, speech=False):
     completion = client.chat.completions.create(model = "gpt-4",
             temperature = 0.25,
@@ -381,9 +382,9 @@ def query_agent_stream(prompt, delay_time=0.01, speech=False):
     return reply_content
 
 def query_vector_with_summary(query):
-    e = read_embeddings_from_csv('../Output/default_embeddings.csv')
+    e = read_embeddings_from_csv('Output/default_embeddings.csv')
     a = search_embeddings("what are strings in python", e)
-    b = read_chunks_from_csv("../Output/default_chunks.csv")
+    b = read_chunks_from_csv("Output/default_chunks.csv")
     c = retrieve_answer(a ,b ,3)
     print(c)
     d = summary_agent(c)
