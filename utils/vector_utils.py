@@ -4,7 +4,7 @@ import csv
 import PyPDF2
 import numpy as np
 # depricated
-from openai.embeddings_utils import cosine_similarity
+#from openai.embeddings_utils import cosine_similarity
 #replaced with
 from scipy.spatial.distance import cosine
 from scipy.spatial import distance_matrix
@@ -12,21 +12,20 @@ import docx
 from striprtf.striprtf import rtf_to_text
 from odf import text, teletype
 from odf.opendocument import load
-from pptx import Presentation
-import ebooklib
-from ebooklib import epub
+#from pptx import Presentation
+#import ebooklib
+#from ebooklib import epub
 from bs4 import BeautifulSoup
 import warnings
 import os
 import whisper
 import ast
 import time
-from text_to_speech import text_to_speech
+#from text_to_speech import text_to_speech
 from dotenv import load_dotenv
 import re
 load_dotenv()
 client = OpenAI(api_key = os.getenv('OPEN_AI_API_KEY'))
-
 #Takes a path to a PDF and returns the text contents
 def read_pdf_file(file_path):
     pdf_reader = PyPDF2.PdfReader(file_path)
@@ -64,7 +63,7 @@ def read_odt_file(file_path):
         full_text.append(paragraph)
     return '\n'.join(full_text)
 
-def read_ppt_file(file_path):
+# def read_ppt_file(file_path):
     prs = Presentation(file_path)
     full_text = []
     for slide in prs.slides:
@@ -79,7 +78,7 @@ def read_ppt_file(file_path):
     # Join paragraphs with a single newline
     return '\n'.join(full_text)
 
-def read_epub_file(file_path):
+# def read_epub_file(file_path):
     # Filter out the ebooklib warning
     with warnings.catch_warnings():
         warnings.filterwarnings("ignore", category=UserWarning)
@@ -187,7 +186,6 @@ def closest_embeddings_to_centroid(embeddings, centroid, n=3):
     distances = [distance_matrix([embedding], [centroid])[0][0] for embedding in embeddings]
     closest_indices = np.argpartition(distances, range(n))[:n]
     return closest_indices.tolist()
-
 def search_embeddings(query, embeddings, n=3):
     """
     Search for the most similar embeddings to the given query using cosine similarity.
@@ -200,15 +198,14 @@ def search_embeddings(query, embeddings, n=3):
     Returns:
         list: A list of indices of the top N most similar embeddings.
     """
-    print("inside search embeddings")
+    #print("inside search embeddings")
     query_embedding = create_embeddings([query])[0]
-    print(query_embedding)
+    #print(query_embedding)
     similarities = [cosine(embedding, query_embedding.embedding) for embedding in embeddings]
-    print('SIZE OF: ',len(similarities))
+    #print('SIZE OF: ',len(similarities))
     top_indices = np.argsort(similarities)[-n:][::-1]
-    print(top_indices)
+    #print(top_indices)
     return top_indices.tolist()
-
 def retrieve_answer(indices, text_chunks, n=3):
     """
     Retrieve the most relevant text from the text chunks using the provided indices.
@@ -255,9 +252,10 @@ def process_docs_and_create_csv(dir_path, embeddings_csv_path, chunks_csv_path, 
     file_handlers = {
         ".doc": read_word_file,
         ".docx": read_word_file,
-        ".ppt": read_ppt_file,
-        ".pptx": read_ppt_file,
-        ".epub": read_epub_file,
+    #    ".ppt": read_ppt_file,
+    #    ".pptx": read_ppt_file,
+    #    ".epub": read_epub_file,
+        ".txt": read_txt_file,
         ".pdf": read_pdf_file,
         ".rtf": read_rtf_file,
         ".odt": read_odt_file,
@@ -303,7 +301,7 @@ def folder_paths(directory):
 
 def summary_agent(prompt):
     completion = client.chat.completions.create(model = "gpt-3.5-turbo",
-            temperature = 0,
+            temperature = 0.5,
             messages=[
                     {"role":"system", "content": "You give a brief summary of given text. \
                      The summary should be concise, informative, and accuratly reflect the contents of the given text.\
@@ -314,7 +312,7 @@ def summary_agent(prompt):
     return reply_content
 
 def query_agent(prompt):
-    completion = client.chat.completions.create(model = "gpt-3.5-turbo",
+    completion = client.chat.completions.create(model = "gpt-4",
             temperature = 0,
             messages=[
                     {"role":"system", "content": "You answer a user's question, given some text as context to help\
@@ -327,8 +325,29 @@ def query_agent(prompt):
     reply_content = completion.choices[0].message.content
     return reply_content
 
+def process_pdfs_and_create_csv(pdf_paths, csv_path, chunks_csv_path, chunk_size=1000):
+    all_chunks = []
+    all_embeddings = []
+    for pdf_path in pdf_paths:
+        try:
+            text = read_pdf_file(pdf_path)
+            text = re.sub(r'[^\x00-\x7F]', '', text)
+            chunks = split_text(text, chunk_size)
+            embeddings = create_embeddings(chunks)
+            all_chunks.extend(chunks)
+            all_embeddings.extend(embeddings)
+        except FileNotFoundError:
+            print(f"File not found: {pdf_path}")
+        except Exception as e:
+            print(f"Error processing file: {pdf_path}")
+            print(f"Error message: {str(e)}")
+
+    write_embeddings_to_csv(all_embeddings, csv_path)
+    write_chunks_to_csv(all_chunks, chunks_csv_path)
+
+    return csv_path, all_chunks
 def query_agent_stream(prompt, delay_time=0.01, speech=False):
-    completion = client.chat.completions.create(model = "gpt-3.5-turbo",
+    completion = client.chat.completions.create(model = "gpt-4",
             temperature = 0,
             stream=True,
             messages=[
@@ -347,31 +366,26 @@ def query_agent_stream(prompt, delay_time=0.01, speech=False):
         reply_content += new_text
         chunk += new_text
         # Check if the chunk ends with a sentence-ending punctuation
-        if chunk and chunk[-1] in {'.', '!', '?'}:
-            if speech == True:
-                text_to_speech(chunk)
-                chunk = ''
+        # if chunk and chunk[-1] in {'.', '!', '?'}:
+        #     if speech == True:
+        #         text_to_speech(chunk)
+        #         chunk = ''
         time.sleep(delay_time)
         # Call the ElevenLabs API for the remaining text if any
-    if speech == True:
-        text_to_speech(chunk)
-        return reply_content
+    # if speech == True:
+    #     text_to_speech(chunk)
+    #     return reply_content
     return reply_content
-
 def query_vector_with_summary(query):
-    e = read_embeddings_from_csv('Output/default_embeddings.csv')
+    e = read_embeddings_from_csv('../Output/default_embeddings.csv')
     a = search_embeddings("what is the purpose of this class", e)
-    b = read_chunks_from_csv("Output/default_chunks.csv")
+    b = read_chunks_from_csv("../Output/default_chunks.csv")
     c = retrieve_answer(a ,b ,3)
-    # d = summary_agent(c)
-    return c
-
-# process_pdfs_and_create_csv(filepath, '../Output/default_embeddings.csv','../Output/default_chunks.csv', chunk_size=300)
+    print(c)
+    d = summary_agent(c)
+    return d
+# uncommment to create vectors
 # process_docs_and_create_csv("../exampleData/","../Output/default_embeddings.csv","../Output/default_chunks.csv", chunk_size=512)
+# uncomment to test
+print(query_vector_with_summary("what are strings in python"))
 
-# a = search_embeddings("what is the purpose of this class")
-# b = read_chunks_from_csv("../Output/default_chunks.csv")
-# c = retrieve_answer(a ,b ,3)
-# print(c)
-# print("\n\n")
-# print(summary_agent(c))
