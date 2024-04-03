@@ -5837,9 +5837,11 @@ recursion	is
 O(log	n)	–	where	n	is	 len(L)	
 6.0001	LECTURE	11	 12		
 …	
-…BISECTION SEARCH IMPLEMENTATION 1def bisect_search1(L, e):!    if L == []:!        return False!    elif len(L) == 1:!        return L[0] == e!    else:!        half = len(L)//2!        if L[half] > e:!"
+…BISECTION SEARCH IMPLEMENTATION 1
+def bisect_search1(L, e):!    if L == []:!        return False!    elif len(L) == 1:!        return L[0] == e!    else:!        half = len(L)//2!        if L[half] > e:!"
 "            return bisect_search1( L[:half], e)!        else:!            return bisect_search1( L[half:], e)!	6.0001	LECTURE	11	13	COMPLEXITY OF FIRS T 
-ETHOD BISECTION SEARCH M
+ETHOD
+ BISECTION SEARCH M
 § 	implementa5on	1	–	bisect_search1	
 • 	O(log	n)	bisec;on	search	calls	
 ll,	size	of	range	to	be	searched	is	cut	in	half	
@@ -5891,7 +5893,8 @@ def bisect_search2(L, e):!
         return False!
     else:!        return bisect_search_helper(L, e, 0, len(L) - 1)!
 6.0001	LECTURE	11	 16	BISECTION SEARCH 
-IMPLEMENTATION 2COMPLEXITY OF SECOND 
+IMPLEMENTATION 2
+COMPLEXITY OF SECOND 
 BISECTION SEARCH METHOD
 § 	implementa5on	2	–	bisect_search2	and	its	helper	
 • O(log	n)	bisec;on	search	calls	
@@ -6939,10 +6942,12 @@ and	sort	each
 1. look	at	ﬁrst	element	of	each,	move	smaller	to	end	of	the	
 result	
 2. when	one	list	empty,	just	copy	rest	of	other	list	
-6.0001	LECTURE	12	 19MERGE SORT§ 	divide	and	conquer	
+6.0001	LECTURE	12	 19MERGE SORT
+§ 	divide	and	conquer	
 § 	split	list	in	half	unAl	have	sublists	of	only	1	element	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted"
 "	merge	merge	merge	merge	merge	merge	merge	merge	
-6.0001	LECTURE	12	22	MERGE SORT§ 	divide	and	conquer			§ 	merge	such	that	sublists	will	be	sorted	aQer	merge	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	sort	sort	sort	sort	sort	sort	sort	sort	merge	merge	merge	merge	
+6.0001	LECTURE	12	22	MERGE SORT
+§ 	divide	and	conquer			§ 	merge	such	that	sublists	will	be	sorted	aQer	merge	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	unsorted	sort	sort	sort	sort	sort	sort	sort	sort	merge	merge	merge	merge	
 6.0001	LECTURE	12	23	MERGE SORT
 §	divide	and	conquer	
 §	merge	sorted	sublists	
@@ -21816,13 +21821,15 @@ own	scope/environment
 changed	by	recursive	call	
 §	ﬂow	of	control	passes	back	to	previous	
 scope	 once	funcSon	call	returns	value	
-6.0001	LECTURE	6	 12	ITERATION vs.  RECURSION  
+6.0001	LECTURE	6	 12	ITERATION vs.  RECURSION 
+
+ 
 def facto"
 "rial_iter(n): def factorial(n):
     prod = 1     if n == 1:
     for i in range(1,n+1): return 1
 prod *= i     else:
-    return prod  return n*factorial(n-1)
+    return prod return n*factorial(n-1)
 6.0001	LECTURE	6	 13	§	recursion	may	be	simpler,	more	intuiSve		
 §	recursion	may	be	eﬃcient	from	programmer	POV	
 §	recursion	may	not	be	eﬃcient	from	computer	POV	INDUCTIVE REASONING
@@ -22123,7 +22130,10 @@ immutable	types	are	hashable
 •	careful	with	float	type	as	a	key	
 §	no	order	to	keys	or	values!	
 d = {4:{1:0}, (1 ,3):""twelve"", 'const':[3.14,2.7,8.44]}	
-6.0001	LECTURE	6	 48	list vsdict    
+6.0001	LECTURE	6	 48	list vsdict 
+ 
+
+  
 6.0001	LECTURE	6	 49	§	ordered	sequence	of	 §	matches	“keys”	to	
 elements	 “values”	
 §	look	up	elements	by	an	 §	look	up	one	item	by	

@@ -304,7 +304,7 @@ def folder_paths(directory):
 
 def summary_agent(prompt):
     completion = client.chat.completions.create(model = "gpt-3.5-turbo",
-            temperature = 0.5,
+            temperature = 0.25,
             messages=[
                     {"role":"system", "content": "You give a brief summary of given text. \
                      The summary should be concise, informative, and accuratly reflect the contents of the given text.\
@@ -316,7 +316,7 @@ def summary_agent(prompt):
 
 def query_agent(prompt):
     completion = client.chat.completions.create(model = "gpt-4",
-            temperature = 0,
+            temperature = 0.25,
             messages=[
                     {"role":"system", "content": "You answer a user's question, given some text as context to help\
                      answer the question. The user request will be in the form of a list. The first item in the\
@@ -351,7 +351,7 @@ def process_pdfs_and_create_csv(pdf_paths, csv_path, chunks_csv_path, chunk_size
     return csv_path, all_chunks
 def query_agent_stream(prompt, delay_time=0.01, speech=False):
     completion = client.chat.completions.create(model = "gpt-4",
-            temperature = 0,
+            temperature = 0.25,
             stream=True,
             messages=[
                     {"role":"system", "content": "You answer a user's question, given some text as context to help\

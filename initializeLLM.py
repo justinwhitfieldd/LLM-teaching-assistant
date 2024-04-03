@@ -48,7 +48,7 @@ def get_response_wFunction(userInput):
     response = client.chat.completions.create(
         model=model_engine,
         messages=GPT_messages,
-        temperature=0,
+        temperature=0.25,
         tools=GPT_tools,
         tool_choice="auto", 
     )
@@ -78,7 +78,7 @@ def get_response_wFunction(userInput):
         second_response = client.chat.completions.create(
             model=model_engine,
             messages=GPT_messages,
-            temperature=0,
+            temperature=0.25,
             tools=GPT_tools,
             tool_choice="auto", 
         )
