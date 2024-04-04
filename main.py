@@ -87,12 +87,10 @@ def on_click_callback():
         full_prompt = historical_context(st.session_state.history, modified_prompt)
         response = LLM.get_response_wFunction(full_prompt)
         st.session_state.history.append({"role": "assistant", "content": response})
-        
 
-
-def initialize_new_chat():
-    st.session_state.history = []
-    triggered_once = True
+# def initialize_new_chat():
+#     st.session_state.history = []
+#     triggered_once = True
 
 load_css()
 initialize_session_state()
@@ -117,8 +115,8 @@ with col2:
     code = '''Hello bulldawgs! I am a virtual teaching assistant for
 Introduction to Computer Programming.'''
     st.code(code, language=None)
-    userSelectedPrompt = st.selectbox("You can choose one of the following prompt if you would like:", ("Explain Concept", "Take a Quiz"),index=None)
-    st.markdown("")
+    userSelectedPrompt = st.selectbox("You can choose one of the following prompt if you would like:", (None, "Explain Concept", "Take a Quiz"),index=None )
+    st.markdown("") 
     st.markdown("")
 
 chat_placeholder = st.container()
@@ -173,3 +171,5 @@ with prompt_placeholder:
 if st.button("New Chat"):
     st.session_state.history = []
     triggered_once = True
+    userSelectedPrompt = None
+    st.rerun()
