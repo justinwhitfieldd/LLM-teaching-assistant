@@ -115,7 +115,8 @@ with col2:
     code = '''Hello bulldawgs! I am a virtual teaching assistant for
 Introduction to Computer Programming.'''
     st.code(code, language=None)
-    userSelectedPrompt = st.selectbox("You can choose one of the following prompt if you would like:", (None, "Explain Concept", "Take a Quiz"),index=None )
+    st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
+    userSelectedPrompt = st.radio("You can choose one of the following prompt if you would like:", (None, "Explain Concept", "Take a Quiz"),index=None )
     st.markdown("") 
     st.markdown("")
 
@@ -172,4 +173,6 @@ if st.button("New Chat"):
     st.session_state.history = []
     triggered_once = True
     userSelectedPrompt = None
+    st.markdown("""<meta http-equiv="refresh" content="0">""", unsafe_allow_html=True)
     st.rerun()
+    
