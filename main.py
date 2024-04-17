@@ -3,43 +3,6 @@ import streamlit.components.v1 as components
 import initializeLLM as LLM
 import base64
 
-# Global Variable
-triggered_once = True
-
-def historical_context(history, user_response):
-    relevant_context = []
-    found_user_response = False
-
-    if not history:
-        return user_response
-
-    # Iterate through the history in reverse order
-    for i in range(len(history) - 1, -1, -1):
-        message = history[i]
-
-        # Check if the message is not None for both "assistant" and "user" roles
-        if message["content"] != "None":
-            # Check if the message is from the "user" role
-            if message["role"] == "user":
-                # Check if this is the user_response we are looking for
-                if not found_user_response and message["content"] == user_response:
-                    found_user_response = True
-                    continue  # Skip adding this message to the context
-
-                # Add the message to the relevant context
-                relevant_context.insert(0, message["content"])
-            elif found_user_response:
-                # Stop adding messages to the context once we have all relevant context
-                break
-
-    # If relevant_context is empty, return user_response
-    if not relevant_context:
-        return user_response
-
-    # Return the relevant context as a single string
-    return " ".join(relevant_context)
-
-
 def load_css():
     with open("Resources/styles.css", "r") as f:
         css = f"<style>{f.read()}</style>"
@@ -49,48 +12,64 @@ def initialize_session_state():
     if "history" not in st.session_state:
         st.session_state.history = []
 
+def get_last_human_response():
+   # Iterate through history in reverse order
+   for idx in range(len(st.session_state.history) - 1, -1, -1):
+       # Get the current history item
+       item = st.session_state.history[idx]
+       # Check if the item is from the "human" role
+       if item['role'] == 'human':
+           return item['content']
+   return None
+
 def on_click_callback():
-    global triggered_once
     human_prompt = st.session_state.human_prompt
     st.session_state.history.append({"role": "user", "content": human_prompt})
-    if userSelectedPrompt == None:
-        # Combine the prompt with historical context
-        full_prompt = human_prompt
-        response = LLM.get_response_wFunction(full_prompt)
+    if st.session_state.user_selected_prompt == None:
+        response = LLM.get_response_wFunction(human_prompt)
         st.session_state.history.append({"role": "assistant", "content": response})
-    else:
-        modified_prompt = ""
-        if userSelectedPrompt == "Explain Concept" and triggered_once:
-            modified_prompt = "Please provide a detailed explanation about " + human_prompt + " that a naive high school student can comprehend. Also, please provide a couple of code examples to use them along with the explanation"
-            triggered_once = False
-        elif userSelectedPrompt == "Take a Quiz" and triggered_once:
-            modified_prompt = "Please prepare a multiple-choice question about " + human_prompt + " with four possible choice as A, B, C, and D. Each option should be on a separate line. Three of them should be incorrect, and only one should be correct. Now let the user respond with their choice. ."
-            triggered_once = False
-        elif not triggered_once and (userSelectedPrompt == "Take a Quiz" or userSelectedPrompt == "Explain Concept"):
-            modified_prompt = human_prompt
-            # Check if the user's response is a valid choice for the quiz
-            if human_prompt.lower() in ["a", "b", "c", "d"]:
-                # Handle the user's response to the quiz
-                if human_prompt.lower() == "a":
-                    modified_prompt = "Your choice was A. Here is the follow-up based on choice A."
-                elif human_prompt.lower() == "b":
-                    modified_prompt = "Your choice was B. Here is the follow-up based on choice B."
-                elif human_prompt.lower() == "c":
-                    modified_prompt = "Your choice was C. Here is the follow-up based on choice C."
-                elif human_prompt.lower() == "d":
-                    modified_prompt = "Your choice was D. Here is the follow-up based on choice D."
-                st.session_state.history.append({"role": "assistant", "content": response})
-            else:
-                response = "Please select a valid choice (A, B, C, or D) for the quiz question."
-                st.session_state.history.append({"role": "assistant", "content": response})
-        # Combine the prompt with historical context
-        full_prompt = historical_context(st.session_state.history, modified_prompt)
-        response = LLM.get_response_wFunction(full_prompt)
+    elif st.session_state.user_selected_prompt == "Explain Concept":
+        modified_prompt = "Please provide a detailed explanation about " + human_prompt + " that a naive high school student can comprehend. Also, please provide a couple of code examples to use them along with the explanation."
+        response = LLM.get_response_wFunction(modified_prompt)
         st.session_state.history.append({"role": "assistant", "content": response})
+        st.session_state.user_selected_prompt = None
+    elif st.session_state.user_selected_prompt == "Quiz Time":
+        quiz_prompt = "Please prepare a multiple-choice question about " + human_prompt + " with four possible choice as A, B, C, and D. Three of them should be incorrect, and only one should be correct. Make sure to list each choice option on a separate line."
+        quiz_prompt = LLM.get_response_wFunction(quiz_prompt)
+        quiz_modified_prompt = quiz_prompt + "<br> <br> Enter the correct response as (A,B,C,D) for the above quiz question"
+        st.session_state.history.append({"role": "assistant", "content": quiz_modified_prompt})
+        assistant_correct_answer = "Can you provide a single alphabet for the correct choice for the follwoing multiple-choice question. <br>" + quiz_prompt
+        quiz_correct_answer = LLM.get_response_wFunction(assistant_correct_answer)
+        st.session_state.history.append({"role": "assistant", "content": quiz_correct_answer})
+        # user_response = get_last_human_response()
+        # while user_response != None:
+        #     user_response = get_last_human_response()
+        #human_response = st.session_state.human_prompt
+        #st.session_state.history.append({"role": "user", "content": human_response})
+        
+        # Need to do something about the call_back based on human_prompt and see if it's related to quiz or not
+        # One idea is to check if the human_prompt = A, B, C or D and if it's then it's related to Quiz 
+        # OR use a global variable to trigger the second part of Quiz again
+        last_message = st.session_state.history[-1]
+        if last_message["role"] == 'human':
+            st.session_state.history.append({"role": "assistant", "content": last_message["content"]})
+        # if user_response:
+        #     if quiz_correct_answer.lower() == user_response.lower():
+        #         response = "Great Job! That's corect way to go!"
+        #         st.session_state.history.append({"role": "assistant", "content": response})
+        #         st.session_state.user_selected_prompt = None
+        #     else:
+        #         response = "I'm sorry, but the correct answer is - Option " + quiz_correct_answer
+        #         st.session_state.history.append({"role": "assistant", "content": response})
+        #         st.session_state.user_selected_prompt = None
 
-# def initialize_new_chat():
-#     st.session_state.history = []
-#     triggered_once = True
+
+
+        # Check the last message and see if the "human" has responded. and then make sure it's A, B, C, or D. Keep asking them until they do.
+        #check_user_response()
+
+
+
 
 load_css()
 initialize_session_state()
@@ -116,7 +95,7 @@ with col2:
 Introduction to Computer Programming.'''
     st.code(code, language=None)
     st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
-    userSelectedPrompt = st.radio("You can choose one of the following prompt if you would like:", (None, "Explain Concept", "Take a Quiz"),index=None )
+    st.session_state.user_selected_prompt = st.radio("You can choose one of the following prompt if you would like:", (None, "Explain Concept", "Quiz Time"),index=0)
     st.markdown("") 
     st.markdown("")
 
@@ -171,8 +150,4 @@ with prompt_placeholder:
 # New Chat Button
 if st.button("New Chat"):
     st.session_state.history = []
-    triggered_once = True
-    userSelectedPrompt = None
-    st.markdown("""<meta http-equiv="refresh" content="0">""", unsafe_allow_html=True)
     st.rerun()
-    
