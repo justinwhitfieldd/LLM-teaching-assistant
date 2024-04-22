@@ -382,14 +382,15 @@ def query_agent_stream(prompt, delay_time=0.01, speech=False):
     return reply_content
 
 def query_vector_with_summary(query):
-    e = read_embeddings_from_csv('Output/default_embeddings.csv')
+    e = read_embeddings_from_csv('../Output/default_embeddings.csv')
     a = search_embeddings("what are strings in python", e)
-    b = read_chunks_from_csv("Output/default_chunks.csv")
+    b = read_chunks_from_csv("../Output/default_chunks.csv")
     c = retrieve_answer(a ,b ,3)
     print(c)
     d = summary_agent(c)
     return d
 # uncommment to create vectors
-#process_docs_and_create_csv("../exampleData/","../Output/default_embeddings.csv","../Output/default_chunks.csv", chunk_size=512)
+# You need be within "utils" folder and then run "python vector_utils.py" function
+#process_docs_and_create_csv("../SlidesDataset/","../Output/default_embeddings.csv","../Output/default_chunks.csv", chunk_size=512)
 # uncomment to test
-print(query_vector_with_summary("what are strings in python"))
+#print(query_vector_with_summary("what are strings in python"))
