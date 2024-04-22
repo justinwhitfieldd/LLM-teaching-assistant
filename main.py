@@ -2,6 +2,9 @@ import streamlit as st
 import random
 import initializeLLM as LLM
 import base64
+import time
+
+quiz_timer = 15
 
 def load_css():
     with open("Resources/styles.css", "r") as f:
@@ -12,10 +15,12 @@ def initialize_session_state():
     if "history" not in st.session_state:
         st.session_state.history = []
 
-@st.cache_data
+@st.cache_data(ttl=15)
 def generate_quiz_question(topic):
     quiz_prompt = "Please prepare a multiple-choice question about " + topic + " with four possible choice as A), B), C), and D). Three of them should be incorrect, and only one should be correct. Make sure to list each choice option on a separate line. Also, provide the correct answer on the next line as well."
     response = LLM.get_response_wFunction(quiz_prompt)
+
+    #st.write(response)
     lines = response.split("\n")
     
     question = lines[0]
@@ -25,10 +30,11 @@ def generate_quiz_question(topic):
     for line in lines[1:]:
         if line.strip().startswith(("A)", "B)", "C)", "D)", "E)", "F)", "G)", "H)", "I)", "J)")):
             options.append(line.strip())
-        elif line.strip().startswith("Correct Answer:"):
-            correct_answer = line.strip().split(":")[-1].strip()
+        elif line.strip().startswith("Correct answer:") or line.strip().startswith("Correct Answer:") or line.strip().startswith("correct Answer:") or line.strip().startswith("correct answer:"):
+            correct_answer = line.strip().split(":", 1)[-1].strip()
+            #st.write(correct_answer)
 
-    return question, correct_answer, options
+    return question, correct_answer, options, 15
 
 def explain_concept():
     st.header("Explain Concept")
@@ -45,8 +51,10 @@ def quiz_time():
 
     if topic:
         # Generate a quiz question based on the topic
-        question, answer, options = generate_quiz_question(topic)
-
+        question, answer, options, quiz_timer = generate_quiz_question(topic)
+        
+        st.warning('Please submit your response within 15 seconds to get the feedback otherwise it will generate a new question!:', icon="⚠️")
+        st.write()
         st.write("Question:", question)
         selected_option = st.radio("Select an option:", options, index=None, key=topic)
 
@@ -58,11 +66,18 @@ def quiz_time():
                 else:
                     st.write("Incorrect. The correct answer is:", answer)
                     
-                new_question = st.button("Generate New Question")
-                if new_question:
-                    topic = None  # Reset the selected option
-                    st.rerun()
-                    quiz_time()  # Re-run the quiz_time function to generate a new question
+                with st.empty():
+                    while quiz_timer:
+                        time_now = '{:02d}'.format(quiz_timer)
+                        st.write(f"The time remaining to re-generate a new Quiz Question (in seconds) :{time_now}")
+                        time.sleep(1)
+                        quiz_timer -= 1
+                    st.write(f"The time remaining to re-generate a new Quiz Question (in seconds) :{time_now}")
+                    new_question = st.button("Generate New Question")
+                    if new_question:
+                        topic = None  # Reset the selected option
+                        st.rerun()
+                        quiz_time()  # Re-run the quiz_time function to generate a new question
     else:
         st.write("Please enter a topic to generate a quiz question.")
 
