@@ -162,11 +162,18 @@ if __name__ == "__main__":
     st.divider()
 
     # Here we added the title of the app with the logo
-    col1, col2, col3 = st.columns([2,1,6])
+    col1, col2, col3 = st.columns([1,1,6])
     with col2:
         st.image("Resources/ai_icon.png", caption=None, width=None, use_column_width="auto", clamp=False, channels="RGB", output_format="auto")
     with col3:
         st.header("Bully - Teaching Assistant")
+    
+    # Here we added the title of the app with the logo
+    col1, col2= st.columns([1,7])
+    with col2:
+        survey_link = "https://msstate.co1.qualtrics.com/jfe/form/SV_2oBvtfXVM7aScDQ"
+        st.write("Please help us with improving this application by filling out the [Survey](%s)" % survey_link)
+    
     st.divider()
 
     # Add a selectbox to the sidebar for the user to choose a prompt
